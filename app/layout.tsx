@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "IgnytePlatform",
-  description: "Modern platform built with Next.js and Tailwind CSS",
+  title: "Ignyte Platform",
+  description: "Modern platform for building and deploying web applications.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
