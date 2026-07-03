@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import PrimaryButton from "./PrimaryButton";
@@ -14,10 +14,23 @@ import SpotifyIcon from "../../assets/icons/Spotify.png";
 import AppleIcon from "../../assets/icons/Apple.png";
 import YoutubeIcon from "../../assets/icons/YT.png";
 
-export default function Navbar() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+interface MenuItem {
+    name: string;
+    href: string;
+    badgeColor: string;
+    links: string[];
+}
 
-    const menuItems = [
+interface SocialItem {
+    src: StaticImageData;
+    alt: string;
+    href: string;
+}
+
+export default function Navbar(): React.ReactElement {
+    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+    const menuItems: MenuItem[] = [
         {
             name: "Frameworks",
             href: "/frameworks",
@@ -48,6 +61,16 @@ export default function Navbar() {
             badgeColor: "bg-[#FFB703] text-[#333132]",
             links: ["All", "Blog", "Product Documentation", "Reckless Compliance", "Emerging Cyber Risk", "Videos", "Latest STIGs"]
         },
+    ];
+
+    const socialMedia: SocialItem[] = [
+        { src: TwitterIcon as StaticImageData, alt: "X (Twitter)", href: "#" },
+        { src: FacebookIcon as StaticImageData, alt: "Facebook", href: "#" },
+        { src: GithubIcon as StaticImageData, alt: "GitHub", href: "#" },
+        { src: LinkedinIcon as StaticImageData, alt: "LinkedIn", href: "#" },
+        { src: SpotifyIcon as StaticImageData, alt: "Spotify", href: "#" },
+        { src: AppleIcon as StaticImageData, alt: "Apple", href: "#" },
+        { src: YoutubeIcon as StaticImageData, alt: "YouTube", href: "#" },
     ];
 
     return (

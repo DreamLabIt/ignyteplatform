@@ -22,7 +22,6 @@ import Badge9 from "../../assets/icons/Apple.png";
 import Badge10 from "../../assets/icons/Apple.png";
 import Badge11 from "../../assets/icons/Apple.png";
 import Badge12 from "../../assets/icons/Apple.png";
-import { JSX } from "react/jsx-runtime";
 
 interface FooterMenu {
     title: string;
@@ -34,7 +33,7 @@ interface SocialIcon {
     alt: string;
 }
 
-export default function Footer(): JSX.Element {
+export default function Footer(): React.ReactElement {
     const footerMenu: FooterMenu[] = [
         {
             title: "Frameworks",
