@@ -1,8 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import PrimaryButton from "./PrimaryButton";
+import backgrounds from "../../assets/background/navbar-bg.png";
+import Logo from "../../assets/logo/logo.png";
+import TwitterIcon from "../../assets/icons/X.png";
+import FacebookIcon from "../../assets/icons/FB.png";
+import GithubIcon from "../../assets/icons/Git.png";
+import LinkedinIcon from "../../assets/icons/LinkedinIcon.png";
+import SpotifyIcon from "../../assets/icons/Spotify.png";
+import AppleIcon from "../../assets/icons/Apple.png";
+import YoutubeIcon from "../../assets/icons/YT.png";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,61 +21,64 @@ export default function Navbar() {
         {
             name: "Frameworks",
             href: "/frameworks",
+            badgeColor: "bg-[#4F91CE] text-[#ECEBEC]",
             links: ["FedRAMP", "CMMC", "ISO 27001", "HIPAA", "HITRUST", "All Frameworks"]
         },
         {
             name: "Solutions",
             href: "/solutions",
+            badgeColor: "bg-[#F7941D] text-[#ECEBEC]",
             links: ["DIB", "Healthcare"]
         },
         {
             name: "Platform",
             href: "/platform",
+            badgeColor: "bg-[#333132] text-[#ECEBEC]",
             links: ["Features", "Pricing"]
         },
         {
             name: "Company",
             href: "/company",
+            badgeColor: "text-[#1E374F] border border-black/90",
             links: ["About us", "Awards and Certifications", "Careers", "Contact us"]
         },
         {
             name: "Resources",
             href: "/resources",
+            badgeColor: "bg-[#FFB703] text-[#333132]",
             links: ["All", "Blog", "Product Documentation", "Reckless Compliance", "Emerging Cyber Risk", "Videos", "Latest STIGs"]
         },
     ];
 
     return (
-        <>
+        <section>
             <header className="w-full px-4 sm:px-6 lg:px-8 pt-4 sticky top-0 z-40 bg-transparent">
-                <div className="max-w-[1620px] mx-auto h-[82px] bg-white rounded-[50px] shadow-sm border border-slate-100/50 flex items-center justify-between px-6 lg:px-10">
+                <div className="max-w-[1620px] mx-auto h-20.5 bg-white rounded-[50px] shadow-sm border border-slate-100/50 flex items-center justify-between px-6 lg:px-10">
 
                     <Link href="/" className="flex items-center gap-2 shrink-0">
-                        <span className="text-2xl font-black tracking-tight text-[#1E374F]">
-                            ignyte<span className="text-[#F7941D]">.</span>
-                        </span>
+                        <Image src={Logo} alt="Logo" className="w-40 h-12.5" />
                     </Link>
 
-                    <nav className="hidden lg:flex items-center gap-[50px]">
+                    <nav className="hidden lg:flex items-center gap-12.5">
                         {menuItems.map((item) => (
                             <div key={item.name} className="relative group py-4">
                                 <Link
                                     href={item.href}
-                                    className="font-sans font-normal text-[18px] leading-[100%] text-[#1E374F] group-hover:text-[#F7941D] flex items-center gap-[10px] transition-colors duration-200"
+                                    className="font-sans font-normal text-[18px] leading-[100%] text-[#1E374F] group-hover:text-[#F7941D] flex items-center gap-2.5 transition-colors duration-200"
                                 >
                                     {item.name}
-                                    <svg className="w-[10px] h-[5px] text-[#1E374F] group-hover:text-[#F7941D] shrink-0 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 10 5">
-                                        <path d="M1 1L5 4L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    <svg className="w-2.5 h-1.25 text-[#1E374F] group-hover:text-[#F7941D] shrink-0 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 10 5">
+                                        <path d="M1 1L5 4L9 1" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </Link>
 
-                                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[220px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
-                                    <div className="bg-white rounded-2xl shadow-xl border border-slate-100 p-3 flex flex-col gap-1">
+                                <div className="absolute top-10 left-0 w-max max-w-none opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                                    <div className="bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)]flex flex-col w-full">
                                         {item.links.map((subLink) => (
                                             <Link
                                                 key={subLink}
                                                 href={`${item.href}/${subLink.toLowerCase().replace(/\s+/g, "-")}`}
-                                                className="font-sans font-medium text-[15px] text-[#1E374F] hover:text-[#F7941D] hover:bg-slate-50 px-3 py-2 rounded-lg transition-colors"
+                                                className="font-sans font-medium text-[14px] text-[#F7941D] hover:text-white hover:bg-[#F7941D] px-8 py-3.5 w-full block transition-colors duration-150"
                                             >
                                                 {subLink}
                                             </Link>
@@ -94,51 +107,58 @@ export default function Navbar() {
             </header>
 
             <div
-                className={`fixed inset-0 z-50 transition-all duration-300 lg:hidden overflow-y-auto w-full h-full max-w-[375px] ml-auto shadow-2xl ${isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
+                className={`fixed inset-0 z-50 transition-all duration-500 lg:hidden overflow-y-auto w-full h-full shadow-2xl ${isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full pointer-events-none"
                     }`}
-                style={{
-
-                    backgroundImage: "linear-gradient(to bottom, rgba(255, 245, 233, 0.95), rgba(255, 255, 255, 0.98), rgba(240, 247, 25xFF, 0.95)), url('/your-bg-image-path.png')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center"
-                }}
             >
-                <div className="p-6 min-h-full flex flex-col justify-between">
+
+                <div
+                    className="p-6 min-h-screen flex flex-col justify-between max-w-125 mx-auto md:max-w-full"
+                    style={{
+                        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${backgrounds.src})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center top",
+                        backgroundRepeat: "no-repeat"
+                    }}
+                >
                     <div>
                         <div className="flex items-center justify-between">
-                            <Link href="/" onClick={() => setIsMenuOpen(false)} className="text-2xl font-black text-[#1E374F]">
-                                ignyte<span className="text-[#F7941D]">.</span>
+                            <Link href="/" onClick={() => setIsMenuOpen(false)}>
+                                <Image src={Logo} alt="Logo" className="w-19 h-6" />
                             </Link>
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center">
                                 <PrimaryButton href="/get-started" text="Get Started" />
-                                <button
-                                    onClick={() => setIsMenuOpen(false)}
-                                    className="p-1.5 text-[#1E374F] hover:text-red-500 transition-colors"
-                                    type="button"
-                                    aria-label="Close menu"
-                                >
-                                    <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
                             </div>
                         </div>
 
-                        <div className="mt-12 flex flex-col gap-10">
+                        <div className="flex justify-end mt-4">
+                            <button
+                                onClick={() => setIsMenuOpen(false)}
+                                className="p-1.5 text-[#1E374F] hover:text-[#F7941D] transition-colors focus:outline-none"
+                                type="button"
+                                aria-label="Close menu"
+                            >
+                                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div className="mt-8 flex flex-col gap-10">
                             {menuItems.map((cat) => (
                                 <div key={cat.name} className="flex flex-col gap-4">
                                     <div>
-                                        <span className="inline-block text-[12px] font-medium font-sans px-3 py-1 bg-slate-200/60 rounded-[100px] text-[#1E374F] opacity-80 uppercase tracking-wider">
+                                        <span className={`inline-block text-[11px] font-bold font-Inter px-3.75 py-1.25 rounded-[100px] tracking-wider scale-95 origin-left ${cat.badgeColor}`}>
                                             {cat.name}
                                         </span>
                                     </div>
+
                                     <div className="flex flex-col gap-4 pl-1">
                                         {cat.links.map((link) => (
                                             <Link
                                                 key={link}
                                                 href={`${cat.href}/${link.toLowerCase().replace(/\s+/g, "-")}`}
                                                 onClick={() => setIsMenuOpen(false)}
-                                                className="font-sans font-semibold text-[24px] leading-[115%] tracking-[-1%] text-[#1E374F] hover:text-[#F7941D] transition-colors"
+                                                className="font-Inter font-semibold text-[24px] sm:text-[24px] leading-[115%] tracking-tight text-[#1E374F] hover:text-[#F7941D] transition-colors"
                                             >
                                                 {link}
                                             </Link>
@@ -149,15 +169,33 @@ export default function Navbar() {
                         </div>
                     </div>
 
-                    <div className="mt-16 pt-6 border-t border-amber-200/30 flex flex-wrap gap-5 justify-center text-[#1E374F]/80">
-                        <Link href="#" className="text-sm font-medium hover:text-[#F7941D]">X.com</Link>
-                        <Link href="#" className="text-sm font-medium hover:text-[#F7941D]">Facebook</Link>
-                        <Link href="#" className="text-sm font-medium hover:text-[#F7941D]">GitHub</Link>
-                        <Link href="#" className="text-sm font-medium hover:text-[#F7941D]">LinkedIn</Link>
-                        <Link href="#" className="text-sm font-medium hover:text-[#F7941D]">Spotify</Link>
+                    <div className="mt-25.5 pb-4">
+                        <div className="flex flex-wrap gap-18.75 gap-y-6.25">
+                            {[
+                                { src: TwitterIcon, alt: "X (Twitter)", href: "#" },
+                                { src: FacebookIcon, alt: "Facebook", href: "#" },
+                                { src: GithubIcon, alt: "GitHub", href: "#" },
+                                { src: LinkedinIcon, alt: "LinkedIn", href: "#" },
+                                { src: SpotifyIcon, alt: "Spotify", href: "#" },
+                                { src: AppleIcon, alt: "Apple", href: "#" },
+                                { src: YoutubeIcon, alt: "YouTube", href: "#" },
+                            ].map((social, index) => (
+                                <Link
+                                    key={index}
+                                    href={social.href}
+                                    className="hover:scale-105 transition-transform duration-200 shrink-0 block"
+                                >
+                                    <Image
+                                        src={social.src}
+                                        alt={social.alt}
+                                        className="w-8.75 h-8.75 object-contain"
+                                    />
+                                </Link>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     );
 }
