@@ -15,7 +15,7 @@ import Badge2 from "../../assets/badges/organaization.png";
 import Badge3 from "../../assets/badges/cyber.png";
 import Badge4 from "../../assets/badges/ios.png";
 import Badge5 from "../../assets/badges/iosaccredited.png";
-import Badge6 from "../../assets/badges/fr.png";
+import Badge6 from "../../assets/badges/FedRampBadge.png";
 import Badge7 from "../../assets/badges/gdpr.png";
 import Badge8 from "../../assets/badges/hipaa.png";
 import Badge9 from "../../assets/badges/sdvosb.png";
