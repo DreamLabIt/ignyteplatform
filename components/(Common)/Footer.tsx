@@ -3,25 +3,25 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import Logo from "../../assets/logo/logotw.png";
-import TwitterIcon from "../../assets/icons/X.png";
-import FacebookIcon from "../../assets/icons/FB.png";
-import GithubIcon from "../../assets/icons/Git.png";
-import LinkedinIcon from "../../assets/icons/LinkedinIcon.png";
-import SpotifyIcon from "../../assets/icons/Spotify.png";
-import AppleIcon from "../../assets/icons/Apple.png";
-import YoutubeIcon from "../../assets/icons/YT.png";
-import Badge1 from "../../assets/badge/register.png";
-import Badge2 from "../../assets/icons/Apple.png";
-import Badge3 from "../../assets/icons/Apple.png";
-import Badge4 from "../../assets/icons/Apple.png";
-import Badge5 from "../../assets/icons/Apple.png";
-import Badge6 from "../../assets/icons/Apple.png";
-import Badge7 from "../../assets/icons/Apple.png";
-import Badge8 from "../../assets/icons/Apple.png";
-import Badge9 from "../../assets/icons/Apple.png";
-import Badge10 from "../../assets/icons/Apple.png";
-import Badge11 from "../../assets/icons/Apple.png";
-import Badge12 from "../../assets/icons/Apple.png";
+import TwitterIcon from "../../assets/icons/X1.png";
+import FacebookIcon from "../../assets/icons/FB1.png";
+import GithubIcon from "../../assets/icons/Git1.png";
+import LinkedinIcon from "../../assets/icons/LinkedinIcon1.png";
+import SpotifyIcon from "../../assets/icons/Spotify1.png";
+import AppleIcon from "../../assets/icons/Apple1.png";
+import YoutubeIcon from "../../assets/icons/YT1.png";
+import Badge1 from "../../assets/badges/register.png";
+import Badge2 from "../../assets/badges/organaization.png";
+import Badge3 from "../../assets/badges/cyber.png";
+import Badge4 from "../../assets/badges/ios.png";
+import Badge5 from "../../assets/badges/iosaccredited.png";
+import Badge6 from "../../assets/badges/fr.png";
+import Badge7 from "../../assets/badges/gdpr.png";
+import Badge8 from "../../assets/badges/hipaa.png";
+import Badge9 from "../../assets/badges/sdvosb.png";
+import Badge10 from "../../assets/badges/minority.png";
+import Badge11 from "../../assets/badges/cyberwinnwe.png";
+import Badge12 from "../../assets/badges/pao.png";
 
 interface FooterMenu {
     title: string;
@@ -190,7 +190,7 @@ export default function Footer(): React.ReactElement {
                                     <Image
                                         src={badge}
                                         alt={`Certification Badge ${idx + 1}`}
-                                        className="w-full h-full object-contain grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all"
+                                        className="w-full h-full object-contain  transition-all"
                                     />
                                 </div>
                             ))}
