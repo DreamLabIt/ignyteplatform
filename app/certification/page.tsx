@@ -1,12 +1,12 @@
 import CardSection from "@/components/(Certification)/CardSection";
 import CloudService from "@/components/(Certification)/CloudService";
 import CustomerStories from "@/components/(Certification)/CustomerStoriesSection";
-import FedRamp from "@/components/(Certification)/FedRamp,";
+import Hero from "@/components/(Certification)/Hero";
 
 export default function Certification() {
   return (
     <>
-      <FedRamp />
+      <Hero />
       <CloudService />
       <CustomerStories />
       <CardSection />
