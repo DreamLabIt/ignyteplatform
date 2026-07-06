@@ -27,10 +27,10 @@ export default function HomeCardSection({
     cards
 }: HomeCardSectionProps): React.ReactElement {
     return (
-        <section className="w-full bg-[#F8F9FA] py-10 px-6">
+        <section className="w-full  py-10 px-6">
             <div className="max-w-[1620px] mx-auto">
 
-                <div className="w-full max-w-222.5 mb-16">
+                <div className="w-full max-w-222.5 mb-10">
                     <h2 className="font-Inter font-semibold text-[28px] sm:text-[36px] md:text-[40px] leading-[125%] text-[#1E374F] mb-4">
                         {title}
                     </h2>
