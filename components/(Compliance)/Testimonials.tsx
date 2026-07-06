@@ -1,0 +1,117 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import TestimonialBg from "../../assets/background/testimonials.jpg";
+import JaymeImg from "../../assets/people/jayme.png";
+import JeffImg from "../../assets/people/jeff.png";
+import TravisImg from "../../assets/people/travis.png";
+import BretImg from "../../assets/people/bret.png";
+
+interface TestimonialItem {
+    name: string;
+    title: string;
+    quote: string;
+    image: any;
+    link: string;
+}
+
+const testimonialsData: TestimonialItem[] = [
+    {
+        name: "Jayme Rahz",
+        title: "CEO, Midway Swiss Turn, Inc.",
+        quote: "With Ignyte, we’ve streamlined our cybersecurity efforts, reaching efficiency, which was not otherwise achievable with our limited resources.",
+        image: JaymeImg,
+        link: "/success-stories/jayme"
+    },
+    {
+        name: "Jeff Kovacich",
+        title: "CVP, Information Technology, Haltec Corporation, Inc.",
+        quote: "The Ignyte delivery team exhibits customer service skills that are second to none. Their expert knowledge helped us make the right decisions for our organization in adopting new policies, procedures, and technology. I would say this collaboration saved us a significant amount of time.",
+        image: JeffImg,
+        link: "/success-stories/jeff"
+    },
+    {
+        name: "Travis Moore",
+        title: "CEO, Jemco Components & Fabrication, Inc",
+        quote: "Ignyte stood out based on their knowledge and experience in cybersecurity, and ability to scale and grow with us. The technology that they've built enables them to have the best product... In combination with their level of service, it really made for a perfect partnership.",
+        image: TravisImg,
+        link: "/success-stories/travis"
+    },
+    {
+        name: "Bret Joslyn",
+        title: "COO, Joslyn",
+        quote: "It was an eye-opener on opportunities that would be out there for us, once we get to the Level 2 of CMMC. From the very beginning, I was impressed with the Ignyte team’s knowledge and experience.",
+        image: BretImg,
+        link: "/success-stories/bret"
+    }
+];
+
+export default function Testimonials() {
+    return (
+        <section
+            className="w-full min-h-222.25 py-20 lg:py-25 flex items-center select-none overflow-hidden"
+            style={{
+                backgroundImage: `url(${TestimonialBg.src})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat"
+            }}
+        >
+            <div className="max-w-[1620px] mx-auto px-6 sm:px-12 lg:px-8 w-full flex flex-col">
+
+                <h2 className="max-w-222.5 font-Inter font-semibold text-[32px] sm:text-[36px] md:text-[40px] leading-[125%] text-[#ECEBEC] mb-11.25 lg:mb-15 tracking-tight">
+                    Hear From Your Fellow <br className="hidden sm:inline" /> DoD Contractors
+                </h2>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center lg:justify-items-stretch">
+                    {testimonialsData.map((item, index) => (
+                        <div
+                            key={index}
+                            className="w-full max-w-96.25 h-132.5 rounded-[20px] p-6.25 flex flex-col justify-between relative shadow-sm"
+                            style={{
+                                background: "linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(224, 237, 248, 0.95) 100%)"
+                            }}
+                        >
+                            <div>
+                                <div className="flex items-center gap-3.75 mb-6">
+                                    <div className="w-26 h-26 rounded-full overflow-hidden shrink-0 border-2 border-white shadow-sm relative">
+                                        <Image
+                                            src={item.image}
+                                            alt={item.name}
+                                            fill
+                                            className="object-cover"
+                                            sizes="104px"
+                                        />
+                                    </div>
+                                    <div className="flex flex-col justify-center">
+                                        <h3 className="font-Inter font-medium text-[18px] leading-[125%] text-[#1E374F] mb-1">
+                                            {item.name}
+                                        </h3>
+                                        <p className="font-Inter font-normal text-[13px] leading-[135%] text-gray-500 max-w-52.75">
+                                            {item.title}
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p className="font-Inter font-semibold text-[15px] xl:text-[16px] leading-[140%] text-[#1E374F] tracking-normal line-clamp-12">
+                                    “{item.quote}”
+                                </p>
+                            </div>
+
+                            <div className="mt-4 pt-2 ">
+                                <Link
+                                    href={item.link}
+                                    className="inline-flex items-center justify-between w-full font-Inter font-semibold text-[16px] md:text-[18px] text-[#4F91CE] hover:text-[#3b7cb7] transition-colors border-b border-[#4F91CE] pb-1"
+                                >
+                                    <span>Read the Success Story</span>
+                                    <span className="text-[20px] leading-none select-none">→</span>
+                                </Link>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
