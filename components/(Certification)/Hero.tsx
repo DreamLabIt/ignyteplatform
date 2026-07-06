@@ -46,6 +46,7 @@ export default function Hero() {
                     </div>
                 </div>
 
+
                 <div className="w-full max-w-323.5 h-62.5 sm:h-112.5 md:h-150 lg:h-175 relative mb-20 sm:mb-30">
                     <div className="w-full h-full relative px-5 sm:px-12.5 md:px-21.75">
                         <div className="w-full h-full relative rounded-t-[20px] overflow-hidden ">

@@ -14,7 +14,7 @@ export default function ComplianceSection() {
         2: { src: AutomateImg, alt: "Compliance Progress Dashboard" },
         3: { src: AuditImg, alt: "Top Priorities and Targets status" },
     };
-
+    console.log("ComplianceSection: rendering",);
     return (
         <section
             className="relative w-full overflow-hidden text-white bg-[#182D43]"
@@ -27,9 +27,6 @@ export default function ComplianceSection() {
                 backgroundRepeat: "no-repeat"
             }}
         >
-
-
-
             <div className="max-w-[1620px] mx-auto px-6 pt-25 pb-10 lg:pb-16 relative z-20">
 
                 <div className="max-w-222.5 mx-auto text-center flex flex-col items-center justify-center mb-16">

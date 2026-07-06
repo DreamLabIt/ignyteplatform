@@ -43,8 +43,8 @@ export default function CardSection() {
     ];
 
     return (
-        <main>
+        <section>
             <HomeCardSection cards={homeCardsData} />
-        </main>
+        </section>
     );
 }
