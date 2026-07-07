@@ -1,11 +1,12 @@
 import CmmcFeatures from "@/components/(Compliance)/CmmcFeatures";
-import ComplianceRisk from "@/components/(Compliance)/ComplianceRisk";
+import Hero from "@/components/(Compliance)/Hero";
 import Testimonials from "@/components/(Compliance)/Testimonials";
 
 export default function Compliance() {
   return (
     <>
-      <ComplianceRisk />
+      <Hero />
+      {/* <ComplianceRisk /> */}
       <Testimonials />
       <CmmcFeatures />
     </>
