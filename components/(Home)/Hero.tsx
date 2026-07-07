@@ -76,6 +76,12 @@ export default function MainHero() {
                             sizes="(max-w: 1024px) 100vw, 854px"
                             className="object-contain object-right-center"
                         />
+                        <div
+                            className="absolute bottom-6 left-0 right-0 h-[30%] pointer-events-none z-10"
+                            style={{
+                                background: "linear-gradient(180deg, rgba(241, 240, 239, 0) 0%, #F8F9FA 40%)"
+                            }}
+                        />
                     </div>
                 </div>
             </div>
