@@ -74,34 +74,42 @@ export default function Navbar(): React.ReactElement {
     ];
 
     return (
-        <section>
-            <header className="absolute top-0 left-0 w-full px-4 sm:px-6 lg:px-8 pt-4 z-40 bg-transparent">
-                <div className="max-w-[1620px] mx-auto h-20.5 bg-white rounded-[50px] shadow-sm border border-slate-100/50 flex items-center justify-between px-6 lg:px-10">
+        <section className="relative w-full">
+            <header className="absolute top-4.5 left-0 w-full px-4 sm:px-6 lg:px-7 z-40 bg-transparent">
+                <div className="max-w-[1620px] mx-auto h-20.5 bg-white rounded-[50px] shadow-[0px_10px_30px_0px_rgba(0,0,0,0.07)] flex items-center relative px-6 pl-3">
+                    <div className="flex items-center shrink-0">
+                        <Link href="/" className="block">
+                            <Image
+                                src={Logo}
+                                alt="Logo"
+                                width={160}
+                                height={50}
+                                className="w-40 h-12.5 object-contain"
+                                priority
+                            />
+                        </Link>
+                    </div>
 
-                    <Link href="/" className="flex items-center gap-2 shrink-0">
-                        <Image src={Logo} alt="Logo" className="w-40 h-12.5" />
-                    </Link>
-
-                    <nav className="hidden lg:flex items-center gap-12.5">
+                    <nav className="hidden lg:flex items-center gap-12.5 ml-22.75 h-full">
                         {menuItems.map((item) => (
-                            <div key={item.name} className="relative group py-4">
+                            <div key={item.name} className="relative group flex items-center h-full">
                                 <Link
                                     href={item.href}
-                                    className="font-sans font-normal text-[18px] leading-[100%] text-[#1E374F] group-hover:text-[#F7941D] flex items-center gap-2.5 transition-colors duration-200"
+                                    className="font-['Inter',sans-serif] font-normal text-[18px] leading-[100%] text-[#1E374F] tracking-[0%] flex items-center gap-2.5 transition-colors duration-200 hover:text-[#F7941D]"
                                 >
                                     {item.name}
-                                    <svg className="w-2.5 h-1.25 text-[#1E374F] group-hover:text-[#F7941D] shrink-0 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 10 5">
+                                    <svg className="w-2.5 h-1.25 text-[#1E374F] transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 10 5">
                                         <path d="M1 1L5 4L9 1" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </Link>
 
-                                <div className="absolute top-10 left-0 w-max max-w-none opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
-                                    <div className="bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)]flex flex-col w-full">
+                                <div className="absolute top-18.75 left-0 w-max max-w-none opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                                    <div className="bg-white shadow-[0px_10px_30px_0px_rgba(0,0,0,0.07)] flex flex-col w-full rounded-xl overflow-hidden border border-slate-50">
                                         {item.links.map((subLink) => (
                                             <Link
                                                 key={subLink}
                                                 href={`${item.href}/${subLink.toLowerCase().replace(/\s+/g, "-")}`}
-                                                className="font-sans font-medium text-[14px] text-[#F7941D] hover:text-white hover:bg-[#F7941D] px-8 py-3.5 w-full block transition-colors duration-150"
+                                                className="font-['Inter',sans-serif] font-medium text-[14px] text-[#1E374F] hover:text-white hover:bg-[#F7941D] px-6 py-3 w-full block transition-colors duration-150"
                                             >
                                                 {subLink}
                                             </Link>
@@ -112,20 +120,24 @@ export default function Navbar(): React.ReactElement {
                         ))}
                     </nav>
 
-                    <div className="hidden lg:block">
-                        <PrimaryButton href="/get-started" text="Get Started" />
+                    <div className="hidden lg:flex ml-auto shrink-0 items-center justify-end">
+                        <div className="w-44.25 h-13 flex items-center justify-center">
+                            <PrimaryButton href="/get-started" text="Get Started" />
+                        </div>
                     </div>
 
-                    <button
-                        onClick={() => setIsMenuOpen(true)}
-                        className="lg:hidden p-2 text-[#1E374F] hover:text-[#F7941D] focus:outline-none transition-colors"
-                        type="button"
-                        aria-label="Open menu"
-                    >
-                        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
+                    <div className="lg:hidden ml-auto">
+                        <button
+                            onClick={() => setIsMenuOpen(true)}
+                            className="p-2 text-[#1E374F] hover:text-[#F7941D] focus:outline-none transition-colors"
+                            type="button"
+                            aria-label="Open menu"
+                        >
+                            <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </header>
 
