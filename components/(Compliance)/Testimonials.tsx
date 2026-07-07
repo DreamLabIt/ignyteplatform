@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import TestimonialBg from "../../assets/background/testimonials.jpg";
@@ -58,7 +56,7 @@ export default function Testimonials() {
                 backgroundRepeat: "no-repeat"
             }}
         >
-            <div className="max-w-[1620px] mx-auto px-6 sm:px-12 lg:px-8 w-full flex flex-col">
+            <div className="max-w-[1620px] mx-auto px-6 w-full flex flex-col">
 
                 <h2 className="max-w-222.5 font-Inter font-semibold text-[32px] sm:text-[36px] md:text-[40px] leading-[125%] text-[#ECEBEC] mb-11.25 lg:mb-15 tracking-tight">
                     Hear From Your Fellow <br className="hidden sm:inline" /> DoD Contractors

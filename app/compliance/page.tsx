@@ -6,7 +6,6 @@ export default function Compliance() {
   return (
     <>
       <Hero />
-      {/* <ComplianceRisk /> */}
       <Testimonials />
       <CmmcFeatures />
     </>
