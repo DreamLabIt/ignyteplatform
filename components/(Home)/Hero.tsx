@@ -48,17 +48,17 @@ export default function MainHero() {
                         <PrimaryButton href="/get-started" text="Get Started" />
                     </div>
 
-                    <div className="flex items-center flex-wrap gap-8 mt-20 md:mt-27.5 grayscale-100">
-                        <div className="relative w-21.25 h-16.25">
+                    <div className="flex items-center gap-8 mt-20 grayscale-100">
+                        <div className="relative w-11.25 lg:w-21.25 h-16.25">
                             <Image src={FedRampLogo} alt="FedRAMP Logo" fill className="object-contain" />
                         </div>
-                        <div className="relative w-18.75 h-16.25">
+                        <div className="relative w-11.25 lg:w-21.25 h-16.25">
                             <Image src={CyberLogo} alt="Cyber Security Logo" fill className="object-contain" />
                         </div>
-                        <div className="relative w-35 h-11.25">
+                        <div className="relative w-11.25 lg:w-21.25 h-11.25">
                             <Image src={VeteranLogo} alt="Veteran Owned Business Logo" fill className="object-contain" />
                         </div>
-                        <div className="relative w-16.25 h-16.25">
+                        <div className="relative w-11.25 lg:w-21.25 h-16.25">
                             <Image src={IasLogo} alt="IAS Accredited Logo" fill className="object-contain" />
                         </div>
                     </div>
