@@ -45,7 +45,7 @@ export default function TrustedTeams() {
 
                 <div className="w-full inline-flex flex-nowrap overflow-hidden mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-128px),transparent_100%)] mb-8">
 
-                    <div className="auto-scroll-wrapper flex items-center justify-center gap-4 min-w-full shrink-0 pr-4">
+                    <div className="auto-scroll-wrapper flex items-center justify-center gap-4 min-w-full shrink-0 pr-2">
                         {logos.map((logo) => (
                             <div
                                 key={`loop-1-${logo.id}`}
@@ -63,7 +63,7 @@ export default function TrustedTeams() {
                         ))}
                     </div>
 
-                    <div className="auto-scroll-wrapper flex items-center justify-center gap-4 min-w-full shrink-0 pr-4" aria-hidden="true">
+                    <div className="auto-scroll-wrapper flex items-center justify-center gap-4 min-w-full shrink-0 pr-0" aria-hidden="true">
                         {logos.map((logo) => (
                             <div
                                 key={`loop-2-${logo.id}`}

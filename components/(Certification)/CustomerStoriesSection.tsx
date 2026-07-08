@@ -54,7 +54,7 @@ const stories: StoryItem[] = [
 function StoryRow({ story }: { story: StoryItem }) {
     return (
         <div
-            className={`flex flex-col gap-10 md:gap-10 items-center ${story.isReversed ? "md:flex-row-reverse" : "md:flex-row"
+            className={`flex flex-col gap-10 md:gap-32 items-center ${story.isReversed ? "md:flex-row-reverse" : "md:flex-row"
                 }`}
         >
             <div className="relative w-full md:w-1/2 max-w-192.75 px-2 md:px-0">
@@ -69,7 +69,7 @@ function StoryRow({ story }: { story: StoryItem }) {
                 </div>
             </div>
 
-            <div className="w-full md:w-1/2 flex flex-col gap-6 sm:gap-8.75 px-2 md:px-0 max-w-172.75">
+            <div className="w-full md:w-1/2 flex flex-col gap-6 sm:gap-10.75 px-2 md:px-0 max-w-172.75 ">
                 <p className="font-inter font-semibold text-lg sm:text-[22px] lg:text-[24px] leading-[135%] tracking-normal text-[#1E374F]">
                     {story.quote}
                 </p>
@@ -97,9 +97,9 @@ function StoryRow({ story }: { story: StoryItem }) {
 
 export default function CustomerStories(): React.ReactElement {
     return (
-        <section className="w-full py-16">
-            <div className="mx-auto w-full max-w-[1620px] px-6 flex flex-col gap-14 sm:gap-20">
-                <h2 className="font-inter font-bold text-2xl sm:text-[28px] lg:text-[32px] text-[#1E374F] tracking-tight">
+        <section className="w-full pt-24">
+            <div className="mx-auto w-full max-w-[1620px] px-2 flex flex-col gap-14 sm:gap-20">
+                <h2 className="font-inter font-semibold text-2xl sm:text-[28px] lg:text-[40px] text-[#1E374F] tracking-tight">
                     The Nation&apos;s Federal Sector Loves Ignyte
                 </h2>
 
