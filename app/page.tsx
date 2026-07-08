@@ -1,3 +1,4 @@
+import ScheduleAudit from "@/components/(Common)/ScheduleAudit";
 import CardSection from "@/components/(Home)/CardSection";
 import ComplianceInsights from "@/components/(Home)/ComplianceInsights";
 import ComplianceSection from "@/components/(Home)/ComplianceSection";
@@ -14,6 +15,7 @@ export default function Home() {
       <ComplianceSection />
       <CardSection />
       <ComplianceInsights />
+      <ScheduleAudit />
     </>
   );
 }
