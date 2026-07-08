@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import TestimonialBg from "../../assets/background/testimonials.jpg";
 import JaymeImg from "../../assets/people/jayme.png";
@@ -10,7 +10,7 @@ interface TestimonialItem {
     name: string;
     title: string;
     quote: string;
-    image: any;
+    image: StaticImageData;
     link: string;
 }
 
@@ -56,7 +56,7 @@ export default function Testimonials() {
                 backgroundRepeat: "no-repeat"
             }}
         >
-            <div className="max-w-[1620px] mx-auto px-6 w-full flex flex-col">
+            <div className="max-w-[1620px] mx-auto  w-full flex flex-col">
 
                 <h2 className="max-w-222.5 font-Inter font-semibold text-[32px] sm:text-[36px] md:text-[40px] leading-[125%] text-[#ECEBEC] mb-11.25 lg:mb-15 tracking-tight">
                     Hear From Your Fellow <br className="hidden sm:inline" /> DoD Contractors
@@ -66,41 +66,40 @@ export default function Testimonials() {
                     {testimonialsData.map((item, index) => (
                         <div
                             key={index}
-                            className="w-full max-w-96.25 h-132.5 rounded-[20px] p-6.25 flex flex-col justify-between relative shadow-sm"
+                            className="w-full max-w-96.25 h-132.5 rounded-[20px] p-6.25 flex flex-col justify-between relative shadow-sm overflow-hidden"
                             style={{
-                                background: "linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(224, 237, 248, 0.95) 100%)"
+                                background: "linear-gradient(24.15deg, rgba(146, 181, 215, 0) 5.42%, rgba(146, 181, 215, 0.7) 92.97%), linear-gradient(0deg, #F1F1F1, #F1F1F1)"
                             }}
                         >
                             <div>
-                                <div className="flex items-center gap-3.75 mb-6">
-                                    <div className="w-26 h-26 rounded-full overflow-hidden shrink-0 border-2 border-white shadow-sm relative">
+                                <div className="flex items-start gap-3.75 mb-12">
+                                    <div className="w-26 h-28 rounded-full overflow-hidden shrink-0 relative">
                                         <Image
                                             src={item.image}
                                             alt={item.name}
                                             fill
                                             className="object-cover"
-                                            sizes="104px"
                                         />
                                     </div>
                                     <div className="flex flex-col justify-center">
-                                        <h3 className="font-Inter font-medium text-[18px] leading-[125%] text-[#1E374F] mb-1">
+                                        <h3 className="font-Inter font-medium text-[18px] leading-[125%] text-[#1E374F] mt-3 mb-1">
                                             {item.name}
                                         </h3>
-                                        <p className="font-Inter font-normal text-[13px] leading-[135%] text-gray-500 max-w-52.75">
+                                        <p className="font-Inter font-medium text-[14px] leading-[135%] text-[#1E374F80] max-w-52.75">
                                             {item.title}
                                         </p>
                                     </div>
                                 </div>
 
-                                <p className="font-Inter font-semibold text-[15px] xl:text-[16px] leading-[140%] text-[#1E374F] tracking-normal line-clamp-12">
+                                <p className="font-Inter font-semibold text-[16px] xl:text-[20px] leading-[120%] text-[#1E374F] tracking-normal line-clamp-12">
                                     “{item.quote}”
                                 </p>
                             </div>
 
-                            <div className="mt-4 pt-2 ">
+                            <div className="mt-6 pt-5 ">
                                 <Link
                                     href={item.link}
-                                    className="inline-flex items-center justify-between w-full font-Inter font-semibold text-[16px] md:text-[18px] text-[#4F91CE] hover:text-[#3b7cb7] transition-colors border-b border-[#4F91CE] pb-1"
+                                    className="inline-flex items-center justify-between w-full font-Inter font-semibold text-[16px] md:text-[20px] text-[#4F91CE] hover:text-[#3b7cb7] transition-colors border-b border-[#4F91CE] pb-1"
                                 >
                                     <span>Read the Success Story</span>
                                     <span className="text-[20px] leading-none select-none">→</span>
