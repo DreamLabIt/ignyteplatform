@@ -42,7 +42,7 @@ export default function ScheduleAudit(): React.ReactElement {
     ];
 
     return (
-        <section className="w-full bg-[#1E374F] text-[#ECEBEC] font-Inter pt-26 pb-22 py-25 px-25 md:px-50">
+        <section className="w-full bg-[#1E374F] text-[#ECEBEC] font-Inter pt-26 pb-22 py-25 px-4 md:px-50">
             <div className="max-w-[1620px] mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-center gap-8.75 lg:gap-80 lg:mx-2">
 
                 <div className="flex flex-col w-full max-w-192 ">

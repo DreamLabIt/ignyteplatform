@@ -69,7 +69,7 @@ export default function HomeCardSection({
                                     {card.title}
                                 </h3>
 
-                                <p className="font-Inter font-normal text-[169px] sm:text-[18px] leading-[120%] text-[#1E374F] mb-8">
+                                <p className="font-Inter font-normal text-[16px] sm:text-[18px] leading-[120%] text-[#1E374F] mb-8">
                                     {card.description}
                                 </p>
                             </div>
