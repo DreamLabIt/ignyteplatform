@@ -49,7 +49,7 @@ export default function CloudService() {
 
     return (
         <section
-            className="w-full py-20  px-6 relative flex flex-col justify-center items-center min-h-screen"
+            className="w-full pt-26  pb-74 px-6 relative flex flex-col justify-center items-center"
             style={{
                 backgroundImage: `linear-gradient(to bottom, rgba(20, 35, 55, 0.21), rgba(26, 43, 67, 0.21)), url(${SectionBg.src})`,
                 backgroundSize: "100% 100%",
@@ -58,8 +58,8 @@ export default function CloudService() {
             }}
         >
             <div className="max-w-[1620px] mx-auto w-full">
-                <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
-                    <div className="max-w-222.5">
+                <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
+                    <div className="max-w-208.5">
                         <h2 className="font-Inter font-semibold text-[32px] sm:text-[36px] md:text-[40px] leading-[125%] text-[#ECEBEC] mb-6 tracking-tight">
                             See How Ignyte Helps Cloud Service Providers Achieve ATO Rapidly and Efficiently
                         </h2>
@@ -77,32 +77,32 @@ export default function CloudService() {
                     {cardsData.map((card) => (
                         <div
                             key={card.id}
-                            className="w-full lg:max-w-128.75 min-h-122 backdrop-blur-sm rounded-[30px] p-4 flex flex-col justify-between shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 border border-white/20"
+                            className="w-full lg:max-w-128.75 min-h-122 backdrop-blur-sm rounded-[30px] p-6 flex flex-col justify-between shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 border border-white/20 pb-10"
                             style={{
                                 background: `linear-gradient(204.15deg, rgba(146, 181, 215, 0) 7.03%, rgba(146, 181, 215, 0.4) 94.58%), #EAF0F6`
                             }}
                         >
                             <div>
-                                <div className="w-13 h-13 flex items-center justify-center mb-8 relative overflow-hidden rounded-sm">
+                                <div className="w-[86px] h-[86px] flex items-center justify-center mb-6 relative overflow-hidden rounded-sm">
                                     <Image
                                         src={card.iconSrc}
                                         alt={`${card.title} icon`}
-                                        width={52}
-                                        height={62}
+                                        width={86}
+                                        height={86}
                                         className="object-contain rounded-sm"
                                     />
                                 </div>
 
-                                <h3 className="font-Inter font-semibold text-[22px] sm:text-[24px] leading-[125%] text-[#1E374F] mb-4">
+                                <h3 className="font-Inter font-semibold text-[22px] sm:text-[24px] leading-[108%] text-[#1E374F] mb-14">
                                     {card.title}
                                 </h3>
 
-                                <p className="font-Inter font-normal text-[15px] sm:text-[16px] leading-[150%] text-[#1E374F]/80 mb-8">
+                                <p className="font-Inter font-normal text-[15px] sm:text-[16px] leading-[150%] text-[#1E374F]/80 mb-12">
                                     {card.description}
                                 </p>
                             </div>
 
-                            <div className="w-full h-55 relative rounded-[25px] overflow-hidden ">
+                            <div className="w-full h-65 relative rounded-[25px] overflow-hidden ">
                                 <Image
                                     src={card.graphicSrc}
                                     alt={card.graphicAlt}
