@@ -42,26 +42,26 @@ export default function ScheduleAudit(): React.ReactElement {
     ];
 
     return (
-        <section className="w-full bg-[#1E374F] text-[#ECEBEC] font-Inter pt-12.5 pb-10 md:py-25 px-5.25 md:px-25">
-            <div className="max-w-[1620px] mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8.75 lg:gap-20">
+        <section className="w-full bg-[#1E374F] text-[#ECEBEC] font-Inter pt-26 pb-22 py-25 px-25 md:px-50">
+            <div className="max-w-[1620px] mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-center gap-8.75 lg:gap-80 lg:mx-2">
 
-                <div className="flex flex-col w-full max-w-222.5">
-                    <h2 className="font-Inter font-semibold text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-5">
+                <div className="flex flex-col w-full max-w-192 ">
+                    <h2 className="font-Inter font-semibold text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-8">
                         Schedule Your Audit Today
                     </h2>
 
-                    <p className="font-Inter font-medium text-[16px] md:text-[20px] leading-[125%] text-[#ECEBEC]/90 mb-8 md:mb-0">
+                    <p className="font-Inter font-medium text-[16px] md:text-[20px] leading-[125%] text-[#ECEBEC]/90 mb-[38px]">
                         Conducting manual IT asset collection and network discovery is time-consuming and costly.
                         And even when an organization achieves compliance, these processes are difficult to maintain
                         and scale to other frameworks.
                     </p>
 
-                    <div className="hidden lg:block mt-8.75">
+                    <div className="hidden lg:block mt-1">
                         <PrimaryButton href="/schedule-call" text="Schedule a Call" />
                     </div>
                 </div>
 
-                <div className="flex flex-row items-center justify-start lg:justify-end gap-6 sm:gap-12 lg:gap-12.75 shrink-0">
+                <div className="flex flex-row items-center justify-start lg:justify-center gap-6 sm:gap-12 lg:gap-12.75 shrink-0">
                     {badges.map((badge, index) => (
                         <div key={index} className="flex items-center justify-center">
                             <Image
