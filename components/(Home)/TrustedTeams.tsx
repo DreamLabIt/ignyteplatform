@@ -24,7 +24,7 @@ export default function TrustedTeams() {
     ];
 
     return (
-        <section className="w-full bg-[#F8F9FA] pt-2 pb-12 overflow-hidden select-none">
+        <section className="w-full bg-[#F8F9FA] pt-4 pb-12 overflow-hidden select-none">
 
             <style dangerouslySetInnerHTML={{
                 __html: `
@@ -49,13 +49,13 @@ export default function TrustedTeams() {
                         {logos.map((logo) => (
                             <div
                                 key={`loop-1-${logo.id}`}
-                                className="h-19 w-40 sm:w-45 md:w-47.5 shrink-0 bg-white rounded-2xl shadow-[0px_2px_8px_rgba(0,0,0,0.04)] flex items-center justify-center p-4 transition-transform hover:scale-105 duration-200"
+                                className="h-19 w-40 sm:w-45 md:w-47.5 shrink-0 bg-white rounded-2xl shadow-[0px_2px_8px_rgba(0,0,0,0.04)] flex items-center justify-center p-4 py-12 transition-transform hover:scale-105 duration-200"
                             >
                                 <div className="relative w-full h-full max-h-11.25 flex items-center justify-center">
                                     <Image
                                         src={logo.src}
                                         alt={logo.alt}
-                                        className="object-contain max-w-full max-h-11.25 w-auto h-auto"
+                                        className="py-8"
                                         priority
                                     />
                                 </div>
@@ -67,13 +67,13 @@ export default function TrustedTeams() {
                         {logos.map((logo) => (
                             <div
                                 key={`loop-2-${logo.id}`}
-                                className="h-19 w-40 sm:w-45 md:w-47.5 shrink-0 bg-white rounded-2xl shadow-[0px_2px_8px_rgba(0,0,0,0.04)] flex items-center justify-center p-4 transition-transform hover:scale-105 duration-200"
+                                className="h-19 w-40 sm:w-45 md:w-47.5 shrink-0 bg-white rounded-2xl shadow-[0px_2px_8px_rgba(0,0,0,0.04)] flex items-center justify-center p-4 py-12 transition-transform hover:scale-105 duration-200"
                             >
                                 <div className="relative w-full h-full max-h-11.25 flex items-center justify-center">
                                     <Image
                                         src={logo.src}
                                         alt={logo.alt}
-                                        className="object-contain max-w-full max-h-11.25 w-auto h-auto"
+                                        className="py-8"
                                         priority
                                     />
                                 </div>
@@ -85,10 +85,10 @@ export default function TrustedTeams() {
                 <div className="w-full flex justify-center">
                     <Link
                         href="/customers"
-                        className="group flex items-center gap-2 font-Inter font-semibold text-[16px] text-[#1E374F] transition-all pb-1 border-b-2 border-[#1E374F]/20 hover:border-[#1E374F]"
+                        className="group flex items-center gap-2 font-Inter font-semibold text-[20px] text-[#1E374F] transition-all border-b-2 border-[#1E374F]/20 hover:border-[#1E374F]"
                     >
                         Hear From Our Customers
-                        <span className="transition-transform group-hover:translate-x-1 duration-200 text-[18px]">
+                        <span className="transition-transform group-hover:translate-x-1 duration-200 text-[20px]">
                             &rarr;
                         </span>
                     </Link>
