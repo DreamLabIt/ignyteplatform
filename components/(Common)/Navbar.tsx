@@ -75,7 +75,7 @@ export default function Navbar(): React.ReactElement {
 
     return (
         <section className="relative w-full">
-            <header className="absolute top-4.5 left-0 w-full px-4 sm:px-6 lg:px-7 z-40 bg-transparent">
+            <header className="absolute top-9.75 left-0 w-full px-4 sm:px-6 lg:px-7 z-40 bg-transparent">
                 <div className="max-w-[1620px] mx-auto h-20.5 bg-white rounded-[50px] shadow-[0px_10px_30px_0px_rgba(0,0,0,0.07)] flex items-center relative px-6 pl-3">
                     <div className="flex items-center shrink-0">
                         <Link href="/" className="block">
