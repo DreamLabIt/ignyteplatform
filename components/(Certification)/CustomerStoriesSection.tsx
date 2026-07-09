@@ -54,10 +54,10 @@ const stories: StoryItem[] = [
 function StoryRow({ story }: { story: StoryItem }) {
     return (
         <div
-            className={`flex flex-col gap-10 md:gap-32 items-center ${story.isReversed ? "md:flex-row-reverse" : "md:flex-row"
+            className={`flex flex-col gap-10 md:gap-30 items-center ${story.isReversed ? "md:flex-row-reverse" : "md:flex-row"
                 }`}
         >
-            <div className="relative w-full md:w-1/2 max-w-192.75 px-2 md:px-0">
+            <div className="relative w-full md:w-1/2 max-w-192.75 px-4 md:px-0">
                 <div className="relative aspect-786/468 w-full rounded-2xl">
                     <Image
                         src={story.image}
@@ -69,8 +69,8 @@ function StoryRow({ story }: { story: StoryItem }) {
                 </div>
             </div>
 
-            <div className="w-full md:w-1/2 flex flex-col gap-6 sm:gap-10.75 px-2 md:px-0 max-w-172.75 ">
-                <p className="font-inter font-semibold text-lg sm:text-[22px] lg:text-[24px] leading-[135%] tracking-normal text-[#1E374F]">
+            <div className="w-full md:w-1/2 flex flex-col gap-6 sm:gap-7.75 px-2 md:px-0 max-w-182.75 ">
+                <p className="font-inter font-semibold text-lg sm:text-[22px] lg:text-[24px] leading-[125%] tracking-normal text-[#1E374F] pt-2">
                     {story.quote}
                 </p>
 
@@ -85,7 +85,7 @@ function StoryRow({ story }: { story: StoryItem }) {
 
                 <Link
                     href="#"
-                    className="inline-flex w-fit items-center gap-2 font-inter font-semibold text-[16px] sm:text-[20px] text-[#4F91CE] hover:text-[#3b72a6] transition-colors group mt-2"
+                    className="inline-flex w-fit items-center gap-2 font-inter font-semibold text-[16px] sm:text-[20px] text-[#4F91CE] hover:text-[#3b72a6] transition-colors group"
                 >
                     Read More Customer Stories
                     <span className="transform group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
@@ -97,13 +97,13 @@ function StoryRow({ story }: { story: StoryItem }) {
 
 export default function CustomerStories(): React.ReactElement {
     return (
-        <section className="w-full pt-24">
+        <section className="w-full pt-24 pb-36">
             <div className="mx-auto w-full max-w-[1620px] px-2 flex flex-col gap-14 sm:gap-20">
                 <h2 className="font-inter font-semibold text-2xl sm:text-[28px] lg:text-[40px] text-[#1E374F] tracking-tight">
                     The Nation&apos;s Federal Sector Loves Ignyte
                 </h2>
 
-                <div className="flex flex-col gap-10 ">
+                <div className="flex flex-col gap-38 ">
                     {stories.map((story) => (
                         <StoryRow key={story.author} story={story} />
                     ))}
