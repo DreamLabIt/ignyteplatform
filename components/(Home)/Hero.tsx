@@ -24,7 +24,7 @@ export default function MainHero() {
 
     return (
         <div
-            className="w-full min-h-237.5 relative overflow-hidden flex items-center px-6 md:px-10 lg:px-0 pt-20 lg:pt-4"
+            className="w-full min-h-239.5 relative overflow-hidden flex items-center px-6 md:px-10 lg:px-0 pt-24 lg:pt-8 "
             style={{
                 backgroundImage: `linear-gradient(180deg, rgba(241, 241, 241, 0.56) 51.58%, #F8F9FA 77.61%), url(${HeroBgImg.src})`,
                 backgroundSize: "cover",
@@ -35,7 +35,7 @@ export default function MainHero() {
             <div className="max-w-[1620px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
 
                 {/* Left content */}
-                <div className="lg:col-span-6 flex flex-col items-start justify-center gap-0.5 max-w-220">
+                <div className="lg:col-span-6 flex flex-col items-start justify-center gap-0.5 max-w-220 pt-10">
 
                     {/* Top badges */}
                     <div className="flex items-center gap-2.5 pb-2">
@@ -99,7 +99,7 @@ export default function MainHero() {
                 </div>
 
                 {/* Right image */}
-                <div className="lg:col-span-6 w-full h-100 sm:h-125 md:h-150 lg:h-282.5 flex items-center justify-center lg:justify-end relative">
+                <div className="lg:col-span-6 w-full h-100 sm:h-125 md:h-150 lg:h-260.5 flex items-center justify-center lg:justify-end relative">
                     <div className="relative w-full max-w-283.5 h-full">
                         <Image
                             src={ManWithTablet}

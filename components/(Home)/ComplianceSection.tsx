@@ -19,7 +19,7 @@ export default function ComplianceSection() {
 
     return (
         <section
-            className="relative w-full overflow-x-hidden text-white "
+            className="relative w-full overflow-x-hidden text-white"
             style={{
                 backgroundImage: `linear-gradient(0deg, transparent 10px, rgba(24, 45, 67, 0.60) 300px, #182D49 30%), url(${GradientBgImg.src})`,
                 backgroundSize: "100% 100%",
