@@ -27,7 +27,7 @@ export default function ComplianceSection() {
                 backgroundRepeat: "no-repeat"
             }}
         >
-            <div className="max-w-[1620px] mx-auto px-4 pt-20 pb-10 lg:pb-26 relative z-20">
+            <div className="max-w-[1620px] mx-auto px-4 pt-20 pb-10 lg:pb-28 relative z-20">
 
                 <div className="max-w-222.5 mx-auto text-center flex flex-col items-center justify-center mb-12">
                     <h2 className="font-Inter font-semibold text-[32px] sm:text-[40px] leading-[125%] text-[#ECEBEC] tracking-tight mb-6">
@@ -40,7 +40,7 @@ export default function ComplianceSection() {
                     </p>
                 </div>
 
-                <div className="w-full flex justify-center mb-14 lg:mb-18">
+                <div className="w-full flex justify-center mb-12 lg:mb-14">
                     <div className="w-full max-w-[1590px] aspect-1560/878 relative rounded-[40px] overflow-hidden border-16 sm:border-18 border-[#8E8E8E33] ">
                         <video
                             src="/video/compliance.mp4"

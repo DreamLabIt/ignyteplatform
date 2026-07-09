@@ -58,11 +58,11 @@ export default function ScheduleAudit({
             <div className="mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-center gap-8.75 lg:gap-80 lg:mx-2">
 
                 <div className="flex flex-col w-full max-w-3xl ">
-                    <h2 className="font-Inter font-semibold text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-2">
+                    <h2 className="font-Inter font-semibold text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-[25px]">
                         {title}
                     </h2>
 
-                    {title1 ? <h2 className="font-Inter font-semibold text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-8">
+                    {title1 ? <h2 className="font-Inter font-semibold text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-[35px]">
                         {title1}
                     </h2> : ""}
 

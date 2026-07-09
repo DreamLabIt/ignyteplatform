@@ -39,7 +39,7 @@ export default function ComplianceInsights() {
     ];
 
     return (
-        <section className="w-full mt-12 pb-24 px-6 lg:px-12.5 xl:px-6">
+        <section className="w-full mt-12 pb-22 px-6 lg:px-12.5 xl:px-6">
             <div className="max-w-[1620px] mx-auto">
 
                 <h2 className="font-Inter font-semibold text-[28px] sm:text-[34px] md:text-[40px] leading-[125%] text-[#1E374F] mb-20 text-left">
