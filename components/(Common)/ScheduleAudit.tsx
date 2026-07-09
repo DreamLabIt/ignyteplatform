@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import PrimaryButton from "./PrimaryButton";
-import FedRampBadge from "../../assets/badges/FedRampBadge.png";
+import FedRampBadge from "../../assets/badges/FedRampBadgee.png";
 import CyberAbBadge from "../../assets/badges/cyber.png";
 import IasBadge from "../../assets/badges/Ias.png";
 
@@ -66,7 +66,7 @@ export default function ScheduleAudit({
                         {title1}
                     </h2> : ""}
 
-                    <p className="font-Inter font-medium text-[16px] md:text-[20px] leading-[125%] text-[#ECEBEC]/90 mb-[38px]">
+                    <p className="font-Inter font-medium text-[16px] md:text-[20px] leading-[125%] text-[#ECEBEC]/90 mb-9.5">
                         {description}
                     </p>
 
