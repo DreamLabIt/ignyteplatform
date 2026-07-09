@@ -24,7 +24,7 @@ export default function TrustedTeams() {
     ];
 
     return (
-        <section className="w-full bg-[#F8F9FA] pb-12 overflow-hidden select-none">
+        <section className="w-full bg-[#F8F9FA] pb-12 overflow-hidden select-none ">
 
             <style dangerouslySetInnerHTML={{
                 __html: `
@@ -36,7 +36,6 @@ export default function TrustedTeams() {
                     animation: customInfiniteScroll 25s linear infinite;
                 }
             `}} />
-
             <div className="w-full max-w-[1955px] mx-auto flex flex-col items-center">
 
                 <h2 className="font-Inter font-semibold text-[26px] sm:text-[32px] md:text-[40px] leading-[125%] text-[#1E374F] text-center max-w-222.5 px-4 mb-11.5">

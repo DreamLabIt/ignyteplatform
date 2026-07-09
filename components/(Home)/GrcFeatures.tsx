@@ -17,7 +17,7 @@ function ArrowIcon() {
 
 export default function GrcFeatures() {
     return (
-        <section className="relative w-full overflow-hidden pt-12 lg:pt-44 px-6 lg:px-12.5 xl:px-6">
+        <section className="relative w-full overflow-hidden pt-12 lg:pt-42 px-6 lg:px-12.5 xl:px-6">
 
             <div className="absolute inset-0 -z-10 w-full h-full mx-auto">
                 <Image
@@ -41,7 +41,7 @@ export default function GrcFeatures() {
             <div className="max-w-[1620px] mx-auto">
 
                 <div className="max-w-222.5 mb-10 lg:mb-15 text-left">
-                    <h2 className="font-Inter font-semibold text-[28px] sm:text-[34px] md:text-[40px] leading-[125%] text-[#1E374F] mb-4">
+                    <h2 className="font-Inter font-semibold text-[28px] sm:text-[34px] md:text-[40px] leading-[125%] text-[#1E374F] mb-7.75">
                         GRC Doesn’t Have To Be Overwhelming
                     </h2>
                     <p className="font-Inter font-medium text-[16px] md:text-[20px] leading-[135%] md:leading-[125%] text-[#1E374F]/90 max-w-190">
