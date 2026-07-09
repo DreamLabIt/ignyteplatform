@@ -110,7 +110,7 @@ export default function ComplianceSection() {
                             <motion.div
                                 className="transition-all duration-300 pb-22 relative border-b border-[#FFFFFF40] cursor-pointer"
                                 whileInView={{ opacity: 1 }}
-                                viewport={{ amount: 0.6 }}
+                                viewport={{ margin: "-50% 0px -50% 0px" }}
                                 onViewportEnter={() => setActiveStep(1)}
                             >
                                 <h4 className={`font-Inter font-semibold text-[32px] transition-colors duration-300 ${activeStep === 1 ? "text-white" : "text-[#92B5D7]"}`}>
@@ -131,7 +131,7 @@ export default function ComplianceSection() {
                             <motion.div
                                 className="transition-all duration-300 pt-4 pb-20 relative border-b border-[#FFFFFF40] cursor-pointer"
                                 whileInView={{ opacity: 1 }}
-                                viewport={{ amount: 0.6 }}
+                                viewport={{ margin: "-50% 0px -50% 0px" }}
                                 onViewportEnter={() => setActiveStep(2)}
                             >
                                 <h4 className={`font-Inter font-semibold text-[32px] transition-colors duration-300 ${activeStep === 2 ? "text-white" : "text-[#92B5D7]"}`}>
@@ -152,7 +152,7 @@ export default function ComplianceSection() {
                             <motion.div
                                 className="transition-all duration-300 pt-3 pb-8 relative border-b border-[#FFFFFF40] cursor-pointer"
                                 whileInView={{ opacity: 1 }}
-                                viewport={{ amount: 0.6 }}
+                                viewport={{ margin: "-50% 0px -50% 0px" }}
                                 onViewportEnter={() => setActiveStep(3)}
                             >
                                 <h4 className={`font-Inter font-semibold text-[32px] transition-colors duration-300 ${activeStep === 3 ? "text-white" : "text-[#92B5D7]"}`}>
