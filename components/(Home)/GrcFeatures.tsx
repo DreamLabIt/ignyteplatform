@@ -17,26 +17,15 @@ function ArrowIcon() {
 
 export default function GrcFeatures() {
     return (
-        <section className="relative w-full overflow-hidden pt-12 lg:pt-42 px-6 lg:px-12.5 xl:px-6">
-
-            <div className="absolute inset-0 -z-10 w-full h-full mx-auto">
-                <Image
-                    src={BgGradientImg}
-                    alt="Background Gradient Layout"
-                    fill
-                    className="object-cover object-center pointer-events-none"
-                    priority
-                />
-
-                <div
-                    className="absolute inset-0 pointer-events-none"
-                    style={{
-                        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.75))`,
-                    }}
-                />
-
-                <div className="absolute top-0 left-0 right-0 h-22 bg-linear-to-b from-[#F8F9FA] via-white/50 to-transparent pointer-events-none" />
-            </div>
+        <section className="relative w-full overflow-hidden pt-12 lg:pt-42 px-6 lg:px-12.5 xl:px-6"
+            style={{
+                backgroundImage: `linear-gradient(180deg, rgba(241, 241, 241, 0.56) 51.58%, #F8F9FA 87.61%), url(${BgGradientImg.src})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat"
+            }}
+        >
+            <div className="absolute top-0 left-0 right-0 h-90 bg-linear-to-b from-[#F1F1F1] via-[F1F1F1]/50 to-transparent pointer-events-none" />
 
             <div className="max-w-[1620px] mx-auto">
 
