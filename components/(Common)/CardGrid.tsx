@@ -55,21 +55,21 @@ export default function HomeCardSection({
                             className={`flex flex-col justify-between p-6.75 rounded-[25px] w-full lg:max-w-128.75 min-h-97.5 transition-all duration-300 hover:shadow-sm ${card.cardBgColor}`}
                         >
                             <div>
-                                <div className={`w-21.5 h-21.5 rounded-[25px] flex items-center justify-center mb-20 ${card.iconBgColor}`}>
+                                <div className={`w-21.5 h-14 rounded-[25px] flex items-center justify-center mb-24 `}>
                                     <Image
                                         src={card.iconSrc}
                                         alt={card.iconAlt}
-                                        width={40}
-                                        height={40}
+                                        width={86}
+                                        height={86}
                                         className="object-contain"
                                     />
                                 </div>
 
-                                <h3 className="font-Inter font-semibold text-[22px] sm:text-[24px] leading-[130%] text-[#1E374F] mb-4">
+                                <h3 className="font-Inter font-semibold text-[22px] sm:text-[24px] leading-[130%] text-[#1E374F] mb-5.75">
                                     {card.title}
                                 </h3>
 
-                                <p className="font-Inter font-normal text-[16px] sm:text-[18px] leading-[120%] text-[#1E374F] mb-8">
+                                <p className="font-Inter font-normal text-[16px] sm:text-[18px] leading-[120%] text-[#1E374F] mb-6.25">
                                     {card.description}
                                 </p>
                             </div>
