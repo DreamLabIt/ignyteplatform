@@ -36,10 +36,10 @@ export default function HomeCardSection({
     cards
 }: HomeCardSectionProps): React.ReactElement {
     return (
-        <section className="w-full py-10 px-6 lg:px-12.5 xl:px-6">
+        <section className="w-full py-8 px-6 ">
             <div className="max-w-[1620px] mx-auto">
 
-                <div className="w-full max-w-196 mb-28">
+                <div className="w-full max-w-196 pb-30">
                     <h2 className="font-Inter font-semibold text-[28px] sm:text-[36px] md:text-[40px] leading-[105%] text-[#1E374F] mb-8">
                         {title}
                     </h2>
@@ -77,7 +77,7 @@ export default function HomeCardSection({
                             <div>
                                 <Link
                                     href={card.linkHref}
-                                    className={`inline-flex items-center gap-4 font-Inter font-semibold text-[20px] group border-b pb-0.5 -pt-2 transition-all w-fit ${card.linkColor ? card.linkColor : "text-[#1E374F] border-[#1E374F] hover:border-[#1E374F]"
+                                    className={`inline-flex items-center gap-4 font-Inter font-semibold text-[20px] group border-b pb-0.5  transition-all w-fit ${card.linkColor ? card.linkColor : "text-[#1E374F] border-[#1E374F] hover:border-[#1E374F]"
                                         }`}
                                 >
                                     {card.linkText}

@@ -44,7 +44,7 @@ export default function CardSection() {
     ];
 
     return (
-        <section className="w-full pt-18">
+        <section className="w-full pt-20">
             <HomeCardSection cards={homeCardsData} />
         </section>
     );
