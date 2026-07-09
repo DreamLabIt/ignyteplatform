@@ -59,7 +59,7 @@ export default function CloudService() {
         >
             <div className="max-w-[1620px] mx-auto w-full">
                 <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
-                    <div className="max-w-208.5">
+                    <div className="max-w-218.5">
                         <h2 className="font-Inter font-semibold text-[32px] sm:text-[36px] md:text-[40px] leading-[125%] text-[#ECEBEC] mb-6 tracking-tight">
                             See How Ignyte Helps Cloud Service Providers Achieve ATO Rapidly and Efficiently
                         </h2>

@@ -29,7 +29,7 @@ export default function ComplianceSection() {
         >
             <div className="max-w-[1620px] mx-auto px-4 pt-20 pb-10 lg:pb-28 relative z-20">
 
-                <div className="max-w-222.5 mx-auto text-center flex flex-col items-center justify-center mb-12">
+                <div className="max-w-222.5 mx-auto text-center flex flex-col items-center justify-center mb-[42px]">
                     <h2 className="font-Inter font-semibold text-[32px] sm:text-[40px] leading-[125%] text-[#ECEBEC] tracking-tight mb-6">
                         Achieve Compliance in Months, Not Years
                     </h2>
