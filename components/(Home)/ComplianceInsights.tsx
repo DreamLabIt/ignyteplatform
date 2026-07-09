@@ -39,10 +39,10 @@ export default function ComplianceInsights() {
     ];
 
     return (
-        <section className="w-full mt-12 pb-22 px-6 lg:px-12.5 xl:px-6">
+        <section className="w-full mt-12 pb-24 px-6 lg:px-12.5 xl:px-6">
             <div className="max-w-[1620px] mx-auto">
 
-                <h2 className="font-Inter font-semibold text-[28px] sm:text-[34px] md:text-[40px] leading-[125%] text-[#1E374F] mb-20 text-left">
+                <h2 className="font-Inter font-semibold text-[28px] sm:text-[34px] md:text-[40px] leading-[125%] text-[#1E374F] mb-18 text-left">
                     Access the Latest Compliance Insights
                 </h2>
 
@@ -52,7 +52,7 @@ export default function ComplianceInsights() {
                             key={item.id}
                             className="flex flex-col sm:flex-row items-start gap-4.5 w-full text-left"
                         >
-                            <div className="w-full sm:w-50 md:w-40 xl:w-58 aspect-square relative rounded-[25px] overflow-hidden bg-[#ECEBEC] shrink-0 shadow-sm mx-auto sm:mx-0">
+                            <div className="w-full sm:w-50 md:w-40 xl:w-58 aspect-square relative rounded-[25px] overflow-hidden bg-[#ECEBEC] shrink-0 shadow-sm mx-auto sm:mx-0 ">
                                 <Image
                                     src={item.imageSrc}
                                     alt={item.imageAlt}
@@ -64,21 +64,21 @@ export default function ComplianceInsights() {
                             </div>
 
 
-                            <div className="flex flex-col flex-1 justify-between sm:min-h-50 md:min-h-40 xl:min-h-48.25 py-1 w-full">
-                                <div>
-                                    <span className="inline-block bg-[#333333] text-white font-Inter font-medium text-[14px] px-4 py-1 rounded-[10px] mb-4">
+                            <div className="flex flex-col  justify-between sm:min-h-50 md:min-h-20 xl:min-h-8.25 py-1 w-full">
+                                <div className="relative">
+                                    <span className="inline-block bg-[#333132] text-[#ECEBEC] font-Inter font-normal text-[14px] px-3.75 py-1.25 rounded-[25px] mb-6.25">
                                         {item.badgeText}
                                     </span>
 
-                                    <h3 className="font-Inter font-semibold text-[18px] xl:text-[24px] leading-[135%] text-[#1E374F] mb-2 pr-2">
+                                    <h3 className="absolute top-12 font-Inter font-semibold text-[18px] xl:text-[25px] leading-[135%] text-[#1E374F] mb-2 pr-2">
                                         {item.title}
                                     </h3>
                                 </div>
 
-                                <div className="mt-10">
+                                <div className="pt-22 md:pt-34">
                                     <Link
                                         href={item.linkHref}
-                                        className="inline-block font-Inter font-bold text-[20px] text-[#4B90CD] hover:text-[#3577b5] transition-colors border-b-2 border-[#4B90CD]/30 hover:border-[#4B90CD] pb-0.5"
+                                        className="inline-block font-Inter font-bold text-[20px] text-[#4B90CD] hover:text-[#3577b5] transition-colors border-b-2 border-[#4B90CD]/30 hover:border-[#4B90CD]"
                                     >
                                         {item.linkText}
                                     </Link>
