@@ -1,12 +1,12 @@
 "use client";
 import LockIcon from "../../assets/icons/lock.png";
 import ShieldIcon from "../../assets/icons/shield.png";
-import PatientIcon from "../../assets/icons/patient.png";
+// import PatientIcon from "../../assets/icons/patient.png";
 import SectionBg from "../../assets/background/anita-austvika.jpg";
-import HomeCardSection, { HomeGridCard } from "../(Common)/CardGrid";
+import FedrampCardSection, { GridCard } from "../(Certification)/CardFedramp";
 
 export default function CardSection() {
-  const homeCardsData: HomeGridCard[] = [
+  const CardsData: GridCard[] = [
     {
       id: "journey-card-1",
       title: "New to the FedRAMP Readiness Process?",
@@ -59,10 +59,10 @@ export default function CardSection() {
         <h2 className="font-Inter font-semibold text-[28px] sm:text-[34px] md:text-[40px] leading-[125%] text-[#1E374F] text-center  max-w-197.5 mx-auto tracking-tight ">
           Ignyte Supports The Compliance Journey From Start to Finish
         </h2>
-      </div>
-      <div className="">
-          <HomeCardSection title="" subtitle="" cards={homeCardsData} />
+        <div className="pb-16 ">
+          <FedrampCardSection title="" subtitle="" cards={CardsData} />
         </div>
+      </div>
     </section>
   );
 }
