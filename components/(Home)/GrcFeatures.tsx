@@ -25,10 +25,8 @@ export default function GrcFeatures() {
                 backgroundRepeat: "no-repeat"
             }}
         >
-            <div className="absolute top-0 left-0 right-0 h-90 bg-linear-to-b from-[#F1F1F1] via-[F1F1F1]/50 to-transparent pointer-events-none" />
-
+            <div className="absolute top-0 left-0 right-0 h-30 md:h-50 lg:h-90 bg-linear-to-b from-[#F1F1F1] via-[F1F1F1]/50 to-transparent pointer-events-none" />
             <div className="max-w-[1620px] mx-auto">
-
                 <div className="max-w-222.5 mb-10 lg:mb-15 text-left">
                     <h2 className="font-Inter font-semibold text-[28px] sm:text-[34px] md:text-[40px] leading-[125%] text-[#1E374F] mb-7.75">
                         GRC Doesn’t Have To Be Overwhelming
@@ -41,7 +39,6 @@ export default function GrcFeatures() {
                 </div>
 
                 <div className="flex flex-col gap-6">
-
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-29.75 w-full pb-22">
                         <div className="w-full lg:w-172.75 flex flex-col gap-6 md:gap-8.75 text-left order-1">
                             <h3 className="font-Inter font-semibold text-[24px] sm:text-[28px] md:text-[32px] leading-[125%] text-[#4F91CE]">
