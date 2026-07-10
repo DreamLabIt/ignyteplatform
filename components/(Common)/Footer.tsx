@@ -268,10 +268,10 @@ export default function Footer() {
                         Ignyte © {new Date().getFullYear()} All rights reserved. Ignyte Assurance Platform
                     </p>
                     <div className="flex flex-row justify-between sm:justify-start sm:gap-6 w-full text-[18px]">
-                        <Link href="/privacy-policy" className="hover:underline hover:text-[#F7941D] border-b">
+                        <Link href="/privacy-policy" className="hover:text-[#F7941D] border-b">
                             Privacy Policy
                         </Link>
-                        <Link href="/terms-of-service" className="hover:underline hover:text-[#F7941D] border-b">
+                        <Link href="/terms-of-service" className="hover:text-[#F7941D] border-b">
                             Terms of Service
                         </Link>
                     </div>
