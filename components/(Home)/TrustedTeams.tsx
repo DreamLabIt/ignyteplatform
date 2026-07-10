@@ -24,7 +24,7 @@ export default function TrustedTeams() {
     ];
 
     return (
-        <section className="w-full bg-[#F1F1F1] pb-12 overflow-hidden select-none ">
+        <section className="w-full bg-[#F1F1F1] pb-12 overflow-hidden select-none -mt-px lg:mt-0 relative z-20">
 
             <style dangerouslySetInnerHTML={{
                 __html: `
