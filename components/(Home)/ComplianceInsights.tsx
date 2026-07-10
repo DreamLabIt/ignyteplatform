@@ -78,7 +78,7 @@ export default function ComplianceInsights() {
                                 <div className="pt-22 md:pt-34">
                                     <Link
                                         href={item.linkHref}
-                                        className="inline-block font-Inter font-bold text-[20px] text-[#4B90CD] hover:text-[#3577b5] transition-colors border-b-2 border-[#4B90CD]/30 hover:border-[#4B90CD]"
+                                        className="inline-block font-Inter font-bold text-[20px] text-[#4F91CE] hover:text-[#3577b5] transition-colors border-b-2 border-[#4F91CE] hover:border-[#4B90CD]"
                                     >
                                         {item.linkText}
                                     </Link>

@@ -100,27 +100,27 @@ export default function MainHero() {
                     </div>
 
                     {/* Right image */}
-                    <div className="lg:col-span-6 w-full h-100 sm:h-125 md:h-150 lg:h-260.5 flex items-center justify-center lg:justify-end relative">
-                        <div className="relative w-full max-w-283.5 h-full">
-                            <Image
-                                src={ManWithTablet}
-                                alt="Ignyte Compliance Expert with Dashboard Showcase"
-                                fill
-                                priority
-                                className="object-contain object-right-center"
-                            />
+                    <div className="lg:col-span-6 w-full h-100 sm:h-125 md:h-150 lg:h-260.5 flex items-center justify-center relative">
+                        <div className="relative w-full max-w-283.5 h-full flex items-center justify-center">
+                            <div className="relative w-full h-full scale-105 sm:scale-100 transition-transform duration-300">
+                                <Image
+                                    src={ManWithTablet}
+                                    alt="Ignyte Compliance Expert with Dashboard Showcase"
+                                    fill
+                                    priority
+                                    className="object-contain object-center"
+                                />
+                            </div>
                             <div
-                                className="absolute bottom-15 md:bottom-48 left-0 right-0 h-[10%] pointer-events-none z-10"
+                                className="absolute bottom-[12%] sm:bottom-[15%] md:bottom-[18%] lg:bottom-[18%] left-0 right-0 h-[20%] pointer-events-none z-10"
                                 style={{
-                                    background: "linear-gradient(180deg, rgba(241, 240, 239, 0) 0%, #F1F1F1 110%)"
+                                    background: "linear-gradient(180deg, rgba(241, 241, 241, 0) 0%, rgba(241, 241, 241, 0.3) 50%, #F1F1F1 100%)"
                                 }}
                             />
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </section>
     );
 }
