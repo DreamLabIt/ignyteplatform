@@ -17,7 +17,7 @@ function ArrowIcon() {
 
 export default function GrcFeatures() {
     return (
-        <section className="relative w-full overflow-hidden pt-12 lg:pt-40 px-6 lg:px-12.5 xl:px-6"
+        <section className="relative w-full overflow-hidden -mt-px pt-14 lg:pt-42 px-6 lg:px-12.5 xl:px-6"
             style={{
                 backgroundImage: `linear-gradient(180deg, rgba(241, 241, 241, 0.56) 51.58%, #F8F9FA 87.61%), url(${BgGradientImg.src})`,
                 backgroundSize: "cover",

@@ -24,7 +24,7 @@ export default function TrustedTeams() {
     ];
 
     return (
-        <section className="w-full bg-[#F1F1F1] pb-12 overflow-hidden select-none -mt-px lg:mt-0 relative z-20">
+        <section className="w-full bg-[#F1F1F1] pb-12 overflow-hidden select-none -mt-px pt-21 relative z-20">
 
             <style dangerouslySetInnerHTML={{
                 __html: `
@@ -42,7 +42,7 @@ export default function TrustedTeams() {
                     Mission-Critical Teams Trust Ignyte
                 </h2>
 
-                <div className="w-full inline-flex flex-nowrap overflow-hidden mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-128px),transparent_100%)] mb-8">
+                <div className="w-full inline-flex flex-nowrap overflow-hidden mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-128px),transparent_100%)] mb-[30px]">
 
                     <div className="auto-scroll-wrapper flex items-center justify-center gap-6.25 min-w-full shrink-0 pr-4.25">
                         {logos.map((logo) => (
@@ -81,10 +81,10 @@ export default function TrustedTeams() {
                     </div>
                 </div>
 
-                <div className="w-full flex justify-center">
+                <div className="w-full flex justify-center w-[253px]">
                     <Link
                         href="/customers"
-                        className="group flex items-center gap-2 font-Inter font-semibold text-[20px] text-[#1E374F] transition-all border-b-2 border-[#1E374F]/20 hover:border-[#1E374F]"
+                        className="group flex items-center gap-[21.81] font-Inter font-semibold text-[20px] text-[#1E374F] transition-all border-b-2 border-[#1E374F] hover:border-[#1E374F]/80"
                     >
                         Hear From Our Customers
                         <span className="transition-transform group-hover:translate-x-1 duration-200 text-[20px]">
