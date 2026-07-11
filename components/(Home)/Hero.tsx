@@ -25,7 +25,7 @@ export default function MainHero() {
     return (
         <section>
             <div
-                className="w-full min-h-239.5 relative overflow-hidden flex items-center px-6 lg:px-0 pt-24 lg:pt-8"
+                className="w-full min-h-239.5 relative overflow-hidden flex items-center px-6 lg:px-0 pt-24 lg:pt-16"
                 style={{
                     backgroundImage: `linear-gradient(180deg, rgba(241, 241, 241, 0.56) 51.58%, #F1F1F1 100%), url(${HeroBgImg.src})`,
                     backgroundSize: "cover",
@@ -36,7 +36,7 @@ export default function MainHero() {
                 <div className="max-w-[1620px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10 ">
 
                     {/* Left content */}
-                    <div className="lg:col-span-6 flex flex-col items-start justify-center gap-0.5 max-w-220 pt-10">
+                    <div className="lg:col-span-5 flex flex-col items-start justify-center gap-0.5 max-w-220 pt-10">
 
                         {/* Top badges */}
                         <div className="flex items-center gap-2.5 pb-2">
@@ -100,27 +100,29 @@ export default function MainHero() {
                     </div>
 
                     {/* Right image */}
-                    <div className="lg:col-span-6 w-full h-100 sm:h-125 md:h-150 lg:h-260.5 flex items-center justify-center relative">
-                        <div className="relative w-full max-w-283.5 h-full flex items-center justify-center">
+                    <div className="lg:col-span-7 w-full h-100 sm:h-125 md:h-150 lg:h-220.5 flex items-center justify-center relative">
+                        <div className="relative w-full max-w-983.5 h-full flex items-center justify-center">
                             <div className="relative w-full h-full scale-105 sm:scale-100 transition-transform duration-300">
                                 <Image
                                     src={ManWithTablet}
                                     alt="Ignyte Compliance Expert with Dashboard Showcase"
                                     fill
                                     priority
-                                    className="object-contain object-center"
+                                   
+                                    className="object-contain max-w-900 max-h-800"
                                 />
                             </div>
-                            <div
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div
                                 className="absolute bottom-[12%] sm:bottom-[15%] md:bottom-[18%] lg:bottom-[18%] left-0 right-0 h-[20%] pointer-events-none z-10"
                                 style={{
                                     background: "linear-gradient(180deg, rgba(241, 241, 241, 0) 0%, rgba(241, 241, 241, 0.3) 50%, #F1F1F1 100%)"
                                 }}
                             />
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
     );
 }

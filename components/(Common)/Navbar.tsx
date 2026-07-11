@@ -84,7 +84,7 @@ export default function Navbar(): React.ReactElement {
                                 alt="Logo"
                                 width={160}
                                 height={50}
-                                className="w-[168px] h-[50px] object-contain"
+                                className="w-42 h-12.5 object-contain"
                                 priority
                             />
                         </Link>
@@ -120,10 +120,8 @@ export default function Navbar(): React.ReactElement {
                         ))}
                     </nav>
 
-                    <div className="hidden lg:flex ml-[40.4%] shrink-0 items-center justify-end">
-                        <div className="flex items-center justify-center">
-                            <PrimaryButton href="/get-started" text="Get Started" />
-                        </div>
+                    <div className="hidden lg:flex ml-auto -mr-2 items-center">
+                        <PrimaryButton href="/get-started" text="Get Started" />
                     </div>
 
                     <div className="lg:hidden ml-auto">
