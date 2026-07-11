@@ -17,7 +17,7 @@ function ArrowIcon() {
 
 export default function GrcFeatures() {
     return (
-        <section className="relative w-full overflow-hidden -mt-px pt-14 lg:pt-42 px-6 lg:px-12.5 xl:px-6"
+        <section className="relative w-full overflow-hidden -mt-px pt-14 lg:pt-42 px-6 lg:px-12.5 xl:px-6 pb-18"
             style={{
                 backgroundImage: `linear-gradient(180deg, rgba(241, 241, 241, 0.56) 51.58%, #F8F9FA 87.61%), url(${BgGradientImg.src})`,
                 backgroundSize: "cover",
@@ -27,11 +27,11 @@ export default function GrcFeatures() {
         >
             <div className="absolute top-0 left-0 right-0 h-30 md:h-50 lg:h-90 bg-linear-to-b from-[#F1F1F1] via-[F1F1F1]/50 to-transparent pointer-events-none" />
             <div className="max-w-[1620px] mx-auto">
-                <div className="max-w-222.5 mb-10 lg:mb-15 text-left">
+                <div className="max-w-222.5 mb-10 lg:mb-16 text-left">
                     <h2 className="font-Inter font-semibold text-[28px] sm:text-[34px] md:text-[40px] leading-[125%] text-[#1E374F] mb-7.75">
                         GRC Doesn’t Have To Be Overwhelming
                     </h2>
-                    <p className="font-Inter font-medium text-[16px] md:text-[20px] leading-[135%] md:leading-[125%] text-[#1E374F]/90 max-w-190">
+                    <p className="font-Inter font-medium text-[16px] md:text-[20px] leading-[125%] text-[#1E374F] max-w-190">
                         Conducting manual IT asset collection and network discovery is time-consuming and costly.
                         And even when an organization achieves compliance, these processes are difficult to
                         maintain and scale to other frameworks.
@@ -39,7 +39,7 @@ export default function GrcFeatures() {
                 </div>
 
                 <div className="flex flex-col gap-6">
-                    <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-29.75 w-full pb-22">
+                    <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-29.75 w-full pb-20">
                         <div className="w-full lg:w-172.75 flex flex-col gap-6 md:gap-8.75 text-left order-1">
                             <h3 className="font-Inter font-semibold text-[24px] sm:text-[28px] md:text-[32px] leading-[125%] text-[#4F91CE]">
                                 Access a Team of Compliance Experts
@@ -49,7 +49,7 @@ export default function GrcFeatures() {
                             </p>
                             <Link
                                 href="/experts"
-                                className="group inline-flex items-center gap-2 font-Inter font-semibold text-[16px] text-[#1E374F] border-b-2 border-[#1E374F]/20 hover:border-[#1E374F] pb-1 transition-all w-fit"
+                                className="group inline-flex items-center gap-[21.83px] font-Inter font-semibold text-[16px] lg:text-[20px] text-[#1E374F] border-b-2 border-[#1E374F] hover:border-[#1E374F] pb-0 transition-all w-fit"
                             >
                                 Meet our Compliance Experts
                                 <span className="transition-transform group-hover:translate-x-1 duration-200">
@@ -57,6 +57,7 @@ export default function GrcFeatures() {
                                 </span>
                             </Link>
                         </div>
+
                         <div className="w-full lg:w-202.5 h-62.5 sm:h-95 lg:h-122.75 relative order-2">
                             <Image
                                 src={ComplianceTeamImg}
@@ -68,7 +69,7 @@ export default function GrcFeatures() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-29.75 w-full pb-22">
+                    <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-29.75 w-full pb-9">
                         <div className="w-full lg:w-172.75 flex flex-col gap-6 md:gap-8.75 text-left order-1 lg:order-2">
                             <h3 className="font-Inter font-semibold text-[24px] sm:text-[28px] md:text-[32px] leading-[125%] text-[#4F91CE]">
                                 Centralize Risk Management
@@ -78,7 +79,7 @@ export default function GrcFeatures() {
                             </p>
                             <Link
                                 href="/platform"
-                                className="group inline-flex items-center gap-2 font-Inter font-semibold text-[16px] text-[#1E374F] border-b-2 border-[#1E374F]/20 hover:border-[#1E374F] pb-1 transition-all w-fit"
+                                className="group inline-flex items-center gap-[21.83px] font-Inter font-semibold text-[16px] lg:text-[20px] text-[#1E374F] border-b-2 border-[#1E374F] hover:border-[#1E374F] transition-all w-fit"
                             >
                                 Explore the GRC Platform
                                 <span className="transition-transform group-hover:translate-x-1 duration-200">
@@ -97,28 +98,30 @@ export default function GrcFeatures() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-29.75 w-full pb-28 ">
-                        <div className="w-full lg:w-172.75 flex flex-col gap-6 md:gap-8.75 text-left order-1">
+                    <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-19.75 w-full ">
+
+                        <div className="flex-1 w-full flex flex-col gap-6 md:gap-8.75 text-left order-1">
                             <div>
                                 <h3 className="font-Inter font-semibold text-[24px] sm:text-[28px] md:text-[32px] leading-[125%] text-[#4F91CE] pb-8">
                                     Reclaim Lost Revenue
                                 </h3>
-                                <p className="font-Inter font-medium text-[16px] md:text-[20px] leading-[140%] md:leading-[125%] text-[#1E374F]/90">
+                                <p className="font-Inter font-medium text-[16px] md:text-[20px] leading-[125%] text-[#1E374F] max-w-174.5">
                                     Every day your organization is out of compliance leaves revenue on the table. Automate manual processes and restore client confidence, so you can focus on strategic work.
                                 </p>
                             </div>
-                            <div>
+                            <div className="ml-1 mt-1">
                                 <PrimaryButton href="/get-started" text="Get Started" />
                             </div>
                         </div>
 
-                        <div className="w-full lg:w-202.5 h-62.5 sm:h-95 lg:h-122.75 relative order-2">
+                        <div className="flex-1 w-full max-w-[910px] aspect-[910/691] relative order-2">
                             <Image
                                 src={RevenueChartImg}
                                 alt="Reclaim Lost Revenue"
                                 fill
                                 className="object-contain lg:object-right"
                                 sizes="(max-width: 1024px) 100vw, 810px"
+                                priority
                             />
                         </div>
                     </div>

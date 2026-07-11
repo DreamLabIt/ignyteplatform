@@ -109,7 +109,7 @@ export default function MainHero() {
                             className="object-contain w-213.5 h-188.5"
                         />
                         <div
-                            className="absolute bottom-[10%] left-0 right-0 h-[20%] pointer-events-none z-10"
+                            className="absolute bottom-[0%] left-0 right-0 h-[30%] pointer-events-none z-10"
                             style={{
                                 background: "linear-gradient(180deg, rgba(241, 240, 239, 0) 36.29%, #F1F0EF 97.97%)"
 
