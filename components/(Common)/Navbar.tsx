@@ -84,13 +84,13 @@ export default function Navbar(): React.ReactElement {
                                 alt="Logo"
                                 width={160}
                                 height={50}
-                                className="w-40 h-12.5 object-contain"
+                                className="w-[168px] h-[50px] object-contain"
                                 priority
                             />
                         </Link>
                     </div>
 
-                    <nav className="hidden lg:flex items-center gap-12.5 ml-22.75 h-full">
+                    <nav className="hidden lg:flex items-center gap-[9.6%] ml-[5.1%] h-full">
                         {menuItems.map((item) => (
                             <div key={item.name} className="relative group flex items-center h-full">
                                 <Link
@@ -120,8 +120,8 @@ export default function Navbar(): React.ReactElement {
                         ))}
                     </nav>
 
-                    <div className="hidden lg:flex ml-auto shrink-0 items-center justify-end">
-                        <div className="w-44.25 h-13 flex items-center justify-center">
+                    <div className="hidden lg:flex ml-[40.4%] shrink-0 items-center justify-end">
+                        <div className="flex items-center justify-center">
                             <PrimaryButton href="/get-started" text="Get Started" />
                         </div>
                     </div>
@@ -160,7 +160,7 @@ export default function Navbar(): React.ReactElement {
                             <Link href="/" onClick={() => setIsMenuOpen(false)}>
                                 <Image src={Logo} alt="Logo" className="w-19 h-6" />
                             </Link>
-                            <div className="flex items-center">
+                            <div className="flex items-center max-w-44.25 max-h-13 ">
                                 <PrimaryButton href="/get-started" text="Get Started" />
                             </div>
                         </div>

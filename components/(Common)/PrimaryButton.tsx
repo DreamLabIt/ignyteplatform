@@ -13,7 +13,7 @@ export default function PrimaryButton({
 }: PrimaryButtonProps) {
     const content = (
         <>
-            <span className="font-sans font-semibold text-[14px] lg:text-[18px] leading-[100%] tracking-[0%] text-white px-[4px] select-none whitespace-nowrap">
+            <span className="font-Inter font-semibold text-[14px] lg:text-[18px] leading-[100%] tracking-[0%] text-white select-none whitespace-nowrap">
                 {text}
             </span>
             <div className="w-8.5 h-8.5 shrink-0 rounded-full bg-white flex items-center justify-center transition-transform duration-200 group-hover:translate-x-0.5">
@@ -34,7 +34,7 @@ export default function PrimaryButton({
         </>
     );
 
-    const className = "group inline-flex items-center justify-between min-w-44.25 w-auto h-13 bg-[#F7941D] hover:bg-[#e08316] rounded-[100px] py-1.5 pr-1.5 pl-4 gap-2.5 shadow-sm transition-all duration-200 active:scale-[0.98]";
+    const className = "group inline-flex items-center justify-between min-w-44.25 w-auto h-13 bg-[#F7941D] hover:bg-[#e08316] rounded-[100px] py-3.75 pl-4 pr-2.25 transition-all duration-200 active:scale-[0.98]";
 
     if (href) {
         return (
