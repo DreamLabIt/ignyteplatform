@@ -29,11 +29,11 @@ export default function ComplianceSection() {
         >
             <div className="max-w-[1620px] mx-auto px-4 pt-20 pb-10 lg:pb-28 relative z-20">
 
-                <div className="max-w-222.5 mx-auto text-center flex flex-col items-center justify-center mb-[42px]">
-                    <h2 className="font-Inter font-semibold text-[32px] sm:text-[40px] leading-[125%] text-[#ECEBEC] tracking-tight mb-6">
+                <div className="max-w-222.5 mx-auto text-center flex flex-col items-center justify-center mb-8.5">
+                    <h2 className="font-Inter font-semibold text-[32px] sm:text-[40px] leading-[125%] text-[#ECEBEC] pb-7.75">
                         Achieve Compliance in Months, Not Years
                     </h2>
-                    <p className="font-Inter font-medium text-[16px] sm:text-[20px] leading-[125%] text-[#ECEBEC] max-w-219.75">
+                    <p className="font-Inter font-medium text-[16px] sm:text-[20px] leading-[125%] text-[#ECEBEC] max-w-209.75">
                         Our automated GRC platform and a team of former US Department of Defense assessors and
                         security managers is ready to help you achieve compliance, maintain near real-time transparency,
                         and proactively prepare for compliance audits.
@@ -41,7 +41,7 @@ export default function ComplianceSection() {
                 </div>
 
                 <div className="w-full flex justify-center mb-12 lg:mb-14">
-                    <div className="w-full max-w-[1590px] aspect-1560/878 relative rounded-[40px] overflow-hidden border-16 sm:border-18 border-[#8E8E8E33] ">
+                    <div className="w-full max-w-[1590px] aspect-1560/878 relative rounded-[40px] overflow-hidden border-15 border-[#8E8E8E33] ">
                         <video
                             src="/video/compliance.mp4"
                             className="w-full h-full  rounded-[25px] object-cover"
