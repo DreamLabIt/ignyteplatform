@@ -39,11 +39,11 @@ export default function HomeCardSection({
         <section className="w-full py-8 px-6 ">
             <div className="max-w-[1620px] mx-auto">
 
-                <div className="w-full max-w-[890px] pb-30">
+                <div className="w-full max-w-222.5 pb-30">
                     <h2 className="font-Inter font-semibold text-[28px] sm:text-[36px] md:text-[40px] leading-[105%] text-[#1E374F] mb-8">
                         {title}
                     </h2>
-                    <p className="font-Inter font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-[114.99999999999999%] text-[#1E374F] tracking-[0.34px] max-w-[760px]">
+                    <p className="font-Inter font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-[114.99999999999999%] text-[#1E374F] tracking-[0.34px] max-w-190">
                         {subtitle}
                     </p>
                 </div>
