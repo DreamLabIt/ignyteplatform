@@ -55,14 +55,14 @@ export default function ScheduleAudit({
 
     return (
         <section className="w-full mx-auto bg-[#1E374F] text-[#ECEBEC] font-Inter pt-25.5 pb-26 py-25 px-4 md:px-50">
-            <div className="mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8.75 lg:gap-80">
+            <div className="mx-auto flex flex-col lg:flex-row lg:items-center justify-start gap-10 lg:gap-71">
 
                 <div className="flex flex-col w-full max-w-3xl ">
                     <h2 className="font-Inter font-semibold text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-8.5">
                         {title}
                     </h2>
 
-                    {title1 ? <h2 className="font-Inter font-semibold text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-[35px]">
+                    {title1 ? <h2 className="font-Inter font-semibold text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-8.75">
                         {title1}
                     </h2> : ""}
 
@@ -75,9 +75,10 @@ export default function ScheduleAudit({
                     </div>
                 </div>
 
-                <div className="flex flex-row items-center justify-start lg:justify-center gap-6 sm:gap-12 lg:gap-12.75 shrink-0">
+                <div className="flex flex-wrap items-center justify-start gap-6 sm:gap-8 lg:gap-13 w-full lg:w-auto">
                     {badges.map((badge, index) => (
-                        <div key={index} className="flex items-center justify-center">
+                        <div key={index} className="flex items-center justify-center shrink-0">
+                            {/* Desktop Image */}
                             <Image
                                 src={badge.src}
                                 alt={badge.alt}
@@ -86,6 +87,7 @@ export default function ScheduleAudit({
                                 className="object-contain hidden grayscale md:block"
                                 priority
                             />
+                            {/* Mobile Image */}
                             <Image
                                 src={badge.src}
                                 alt={badge.alt}
