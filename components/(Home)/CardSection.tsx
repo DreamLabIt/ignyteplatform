@@ -1,6 +1,6 @@
-import LockIcon from "../../assets/icons/lock.png";
-import ShieldIcon from "../../assets/icons/shield.png";
-import PatientIcon from "../../assets/icons/patient.png";
+import LockIcon from "../../assets/icons/lock.svg";
+import ShieldIcon from "../../assets/icons/shield.svg";
+import PatientIcon from "../../assets/icons/patient.svg";
 import HomeCardSection, { HomeGridCard } from "../(Common)/CardGrid";
 
 export default function CardSection() {
@@ -39,7 +39,7 @@ export default function CardSection() {
             iconAlt: "Patient Data",
             iconBgColor: "bg-[#1E374F]",
             cardBgColor: "bg-[#1E374F]/15",
-            linkColor: "text-[#1E374F] border-[#1E374F]/30 hover:border-[#1E374F]"
+            linkColor: "text-[#1E374F] border-[#1E374F] hover:border-[#1E374F]/80"
         }
     ];
 

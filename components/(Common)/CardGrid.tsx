@@ -38,7 +38,6 @@ export default function HomeCardSection({
     return (
         <section className="w-full py-7.5 px-6 ">
             <div className="max-w-[1620px] mx-auto">
-
                 <div className="w-full max-w-222.5 pb-28">
                     <h2 className="font-Inter font-semibold text-[28px] sm:text-[36px] md:text-[40px] leading-[105%] text-[#1E374F] mb-9">
                         {title}
@@ -55,7 +54,7 @@ export default function HomeCardSection({
                             className={`flex flex-col justify-between p-6.75 rounded-[25px] w-full lg:max-w-128.75 min-h-97.5 transition-all duration-300 hover:shadow-sm ${card.cardBgColor}`}
                         >
                             <div>
-                                <div className={`w-21.5 h-14 rounded-[25px] flex items-center justify-center mb-22.5 mt-3.5`}>
+                                <div className={`w-21.5 h-14 rounded-[25px] flex items-center justify-center mb-22.75 mt-3.5`}>
                                     <Image
                                         src={card.iconSrc}
                                         alt={card.iconAlt}
@@ -65,19 +64,19 @@ export default function HomeCardSection({
                                     />
                                 </div>
 
-                                <h3 className="font-Inter font-semibold text-[22px] sm:text-[24px] leading-[130%] text-[#1E374F] mb-5.75">
+                                <h3 className="font-Inter font-semibold text-[22px] sm:text-[24px] leading-[125%] text-[#1E374F]  mb-5.75">
                                     {card.title}
                                 </h3>
 
-                                <p className="font-Inter font-normal text-[16px] sm:text-[18px] leading-[125%] text-[#1E374F] mb-6.25 ">
+                                <p className="w-106.25 max-w-full h-11.5 font-Inter font-normal text-[18px] leading-[130%] tracking-[-0.5%] text-[#1E374F] opacity-100 ">
                                     {card.description}
                                 </p>
                             </div>
 
-                            <div>
+                            <div className="pt-11">
                                 <Link
                                     href={card.linkHref}
-                                    className={`inline-flex items-center gap-4 font-Inter font-semibold text-[20px] group border-b pb-0.5  transition-all w-fit ${card.linkColor ? card.linkColor : "text-[#1E374F] border-[#1E374F] hover:border-[#1E374F]"
+                                    className={`inline-flex items-center gap-5 font-Inter font-semibold text-[20px] group border-b-3 pb-0.5 transition-all w-fit ${card.linkColor ? card.linkColor : "text-[#1E374F] border-[#1E374F] hover:border-[#1E374F]"
                                         }`}
                                 >
                                     {card.linkText}
