@@ -54,11 +54,11 @@ export default function ScheduleAudit({
     ];
 
     return (
-        <section className="w-full mx-auto bg-[#1E374F] text-[#ECEBEC] font-Inter pt-24 pb-26 py-25 px-4 md:px-50">
-            <div className="mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-center gap-8.75 lg:gap-80 lg:mx-2">
+        <section className="w-full mx-auto bg-[#1E374F] text-[#ECEBEC] font-Inter pt-25.5 pb-26 py-25 px-4 md:px-50">
+            <div className="mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8.75 lg:gap-80">
 
                 <div className="flex flex-col w-full max-w-3xl ">
-                    <h2 className="font-Inter font-semibold text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-6.25">
+                    <h2 className="font-Inter font-semibold text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-8.5">
                         {title}
                     </h2>
 
@@ -66,12 +66,12 @@ export default function ScheduleAudit({
                         {title1}
                     </h2> : ""}
 
-                    <p className="font-Inter font-medium text-[16px] md:text-[20px] leading-[125%] text-[#ECEBEC]/90 mb-9.5">
+                    <p className="font-Inter font-medium text-[16px] md:text-[20px] leading-[125%] text-[#ECEBEC]/90 mb-8.5">
                         {description}
                     </p>
 
-                    <div className="hidden lg:block mt-1">
-                        <PrimaryButton href="/schedule-call" text={buttonText} />
+                    <div className="hidden lg:block  ">
+                        <PrimaryButton href="/schedule-call" text={buttonText} minWidth="min-w-[226px]" />
                     </div>
                 </div>
 
