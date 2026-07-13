@@ -55,7 +55,7 @@ export default function HomeCardSection({
                             className={`flex flex-col justify-between p-6.75 rounded-[25px] w-full lg:max-w-128.75 min-h-97.5 transition-all duration-300 hover:shadow-sm ${card.cardBgColor}`}
                         >
                             <div>
-                                <div className={`w-21.5 h-14 rounded-[25px] flex items-center justify-center mb-24 `}>
+                                <div className={`w-21.5 h-14 rounded-[25px] flex items-center justify-center mb-22.5 mt-3.5`}>
                                     <Image
                                         src={card.iconSrc}
                                         alt={card.iconAlt}
