@@ -36,19 +36,19 @@ export default function HomeCardSection({
     cards
 }: HomeCardSectionProps): React.ReactElement {
     return (
-        <section className="w-full py-8 px-6 ">
+        <section className="w-full py-7.5 px-6 ">
             <div className="max-w-[1620px] mx-auto">
 
-                <div className="w-full max-w-222.5 pb-30">
-                    <h2 className="font-Inter font-semibold text-[28px] sm:text-[36px] md:text-[40px] leading-[105%] text-[#1E374F] mb-8">
+                <div className="w-full max-w-222.5 pb-28">
+                    <h2 className="font-Inter font-semibold text-[28px] sm:text-[36px] md:text-[40px] leading-[105%] text-[#1E374F] mb-9">
                         {title}
                     </h2>
-                    <p className="font-Inter font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-[114.99999999999999%] text-[#1E374F] tracking-[0.34px] max-w-190">
+                    <p className="font-Inter font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-[114.99999999999999%] text-[#1E374F] tracking-[0.3%] max-w-197.5">
                         {subtitle}
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-7.5">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-9">
                     {cards.map((card) => (
                         <div
                             key={card.id}
@@ -69,7 +69,7 @@ export default function HomeCardSection({
                                     {card.title}
                                 </h3>
 
-                                <p className="font-Inter font-normal text-[16px] sm:text-[18px] leading-[120%] text-[#1E374F] mb-6.25">
+                                <p className="font-Inter font-normal text-[16px] sm:text-[18px] leading-[125%] text-[#1E374F] mb-6.25 ">
                                     {card.description}
                                 </p>
                             </div>
