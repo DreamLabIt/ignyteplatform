@@ -54,7 +54,7 @@ const stories: StoryItem[] = [
 function StoryRow({ story }: { story: StoryItem }) {
     return (
         <div
-            className={`flex flex-col gap-10 md:gap-30 items-center ${story.isReversed ? "md:flex-row-reverse md:-gap-10 " : "md:flex-row"
+            className={`flex flex-col  items-center ${story.isReversed ? "md:flex-row-reverse justify-between gap-10 md:gap-0" : "md:flex-row gap-10 md:gap-30"
                 }`}
         >
             <div className="relative w-full md:w-1/2 max-w-192.75 px-4 md:px-0">
@@ -103,7 +103,7 @@ export default function CustomerStories(): React.ReactElement {
                     The Nation&apos;s Federal Sector Loves Ignyte
                 </h2>
 
-                <div className="flex flex-col gap-38 ">
+                <div className="flex flex-col gap-35 ">
                     {stories.map((story) => (
                         <StoryRow key={story.author} story={story} />
                     ))}
