@@ -10,8 +10,7 @@ export default function Compliance() {
       <Testimonials />
       <CmmcFeatures />
       <ScheduleAudit
-        title="Make CMMC Compliance"
-        title1="a Competitive Advantage"
+        title="Make CMMC Compliance a Competitive Advantage"
         description="The Ignyte team is ready to help you align with the best practices you need for your DoD contracts, and to set you up with a sustainable way to reach additional compliance milestones as needed."
         buttonText="Request a Consultation"
       />
