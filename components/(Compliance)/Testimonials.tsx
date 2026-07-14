@@ -58,7 +58,7 @@ export default function Testimonials() {
         >
             <div className="max-w-[1620px] mx-auto  w-full flex flex-col">
 
-                <h2 className="max-w-222.5 font-Inter font-semibold text-[32px] sm:text-[36px] md:text-[40px] leading-[125%] text-[#ECEBEC] mb-11.25 lg:mb-15 tracking-tight">
+                <h2 className="max-w-222.5 font-Inter font-semibold text-[32px] sm:text-[36px] md:text-[40px] leading-[125%] text-[#ECEBEC] mb-11.25 lg:mb-15 tracking-[1%^]">
                     Hear From Your Fellow <br className="hidden sm:inline" /> DoD Contractors
                 </h2>
 
@@ -72,8 +72,8 @@ export default function Testimonials() {
                             }}
                         >
                             <div>
-                                <div className="flex items-start gap-3.75 mb-12">
-                                    <div className="w-26 h-28 rounded-full overflow-hidden shrink-0 relative">
+                                <div className="flex items-start gap-5 mb-12">
+                                    <div className="w-26 h-26 rounded-full overflow-hidden shrink-0 relative">
                                         <Image
                                             src={item.image}
                                             alt={item.name}
@@ -82,7 +82,7 @@ export default function Testimonials() {
                                         />
                                     </div>
                                     <div className="flex flex-col justify-center">
-                                        <h3 className="font-Inter font-medium text-[18px] leading-[125%] text-[#1E374F] mt-3 mb-1">
+                                        <h3 className="font-Inter font-medium text-[18px] leading-[125%] text-[#1E374F] mt-2 mb-1">
                                             {item.name}
                                         </h3>
                                         <p className="font-Inter font-medium text-[14px] leading-[135%] text-[#1E374F80] max-w-52.75">
@@ -91,7 +91,7 @@ export default function Testimonials() {
                                     </div>
                                 </div>
 
-                                <p className="font-Inter font-semibold text-[16px] xl:text-[20px] leading-[120%] text-[#1E374F] tracking-normal line-clamp-12">
+                                <p className="font-Inter font-semibold text-[16px] xl:text-[20px] leading-[125%] text-[#1E374F] tracking-normal line-clamp-12">
                                     “{item.quote}”
                                 </p>
                             </div>

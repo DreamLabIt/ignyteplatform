@@ -41,7 +41,7 @@ const featureData: FeatureItem[] = [
 export default function Hero() {
     return (
         <div
-            className="w-full relative pt-72 pb-26 overflow-hidden"
+            className="w-full relative pt-72 pb-28 overflow-hidden"
             style={{
                 backgroundImage: `linear-gradient(180deg, rgba(241, 241, 241, 0.56) 51.58%, #F1F1F1 77.61%), url(${HeroBg.src})`,
                 backgroundSize: "cover",
