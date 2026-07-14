@@ -128,7 +128,7 @@ export default function Footer() {
     const rightMenu = [footerMenus[1], footerMenus[2], footerMenus[4]];
 
     return (
-        <footer className="w-full px-2 sm:px-4 lg:px-6 bg-[#333132] text-[#ECEBEC] font-sans pt-12 pb-10">
+        <footer className="w-full px-2 sm:px-4 lg:px-6 bg-[#333132] text-[#ECEBEC] font-sans pt-12 pb-16">
             <div className="max-w-[1620px] mx-auto px-2 xl:px-0 relative">
 
                 <div className="mb-10 xl:mb-12">
@@ -141,20 +141,21 @@ export default function Footer() {
                     </Link>
                 </div>
 
-                <div className="hidden xl:flex xl:flex-row xl:justify-start gap-[81.5px] pb-12 border-b border-[#ECEBEC]">
+                <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 xl:flex xl:flex-row xl:justify-start xl:gap-[81.5px] pb-12 border-b border-[#ECEBEC] w-full overflow-hidden">
                     {footerMenus.map((group) => (
-                        <div key={group.title} className="flex flex-col gap-20.5 min-w-64.75">
+                        <div key={group.title} className="flex flex-col gap-5 w-full xl:min-w-50 lg:max-w-65">
                             <div className="flex justify-start">
-                                <h3 className="text-[#ECEBEC59] font-semibold text-[24px] tracking-wide max-w-64.75">
+                                <h3 className="text-[#ECEBEC59] font-semibold text-[18px] sm:text-[22px] lg:text-[24px] tracking-wide">
                                     {group.title}
                                 </h3>
                             </div>
-                            <ul className="flex flex-col gap-[13.5px] -mt-16">
+
+                            <ul className="flex flex-col gap-[13.5px]">
                                 {group.links.map((link) => (
                                     <li key={link.text} className="w-full">
                                         <Link
                                             href={link.href}
-                                            className="text-[18px] text-[#ECEBEC] hover:text-[#F7941D] transition-colors block leading-snug whitespace-nowrap"
+                                            className="text-[15px] sm:text-[16px] lg:text-[18px] text-[#ECEBEC] hover:text-[#F7941D] transition-colors block leading-snug wrap-break-word xl:whitespace-nowrap"
                                         >
                                             {link.text}
                                         </Link>

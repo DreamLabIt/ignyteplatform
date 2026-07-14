@@ -116,7 +116,7 @@ export default function ComplianceSection() {
                                 <h4 className={`font-Inter font-semibold text-[32px] transition-colors duration-300 ${activeStep === 1 ? "text-white" : "text-[#92B5D7]"}`}>
                                     Consult
                                 </h4>
-                                <p className={`text-[18px] font-normal max-w-[760px] tracking-[-0.1px] mt-7  leading-[125%] -mb-6 transition-colors duration-300 ${activeStep === 1 ? "text-[#ECEBEC]" : "text-[#ECEBEC59]"}`}>
+                                <p className={`text-[18px] font-normal max-w-190 tracking-[-0.1px] mt-7  leading-[125%] -mb-6 transition-colors duration-300 ${activeStep === 1 ? "text-[#ECEBEC]" : "text-[#ECEBEC59]"}`}>
                                     Ignyte’s team of consultants are prepared to help you rapidly achieve certification for major compliance frameworks, including CMMC, FedRAMP, ISO 27001, and more.
                                 </p>
                                 {activeStep === 1 && (
@@ -137,7 +137,7 @@ export default function ComplianceSection() {
                                 <h4 className={`font-Inter font-semibold text-[32px] transition-colors duration-300 ${activeStep === 2 ? "text-white" : "text-[#92B5D7]"}`}>
                                     Automate
                                 </h4>
-                                <div className={`text-[18px] font-normal max-w-[760px]  mt-7  leading-[125%] -mb-14 transition-colors duration-300 ${activeStep === 2 ? "text-[#ECEBEC]" : "text-[#ECEBEC59]"}`}>
+                                <div className={`text-[18px] font-normal max-w-190  mt-7  leading-[125%] -mb-14 transition-colors duration-300 ${activeStep === 2 ? "text-[#ECEBEC]" : "text-[#ECEBEC59]"}`}>
                                     Ignyte customers can create and access customizable dashboards, cross-mapping frameworks, and automatically generate near real-time compliance reports.
                                 </div>
                                 {activeStep === 2 && (
@@ -152,7 +152,7 @@ export default function ComplianceSection() {
                             <motion.div
                                 className="transition-all duration-300 pt-9 pb-8 relative border-b border-[#FFFFFF40] cursor-pointer"
                                 whileInView={{ opacity: 1 }}
-                                viewport={{ margin: "-70% 0px -30% 0px" }}
+                                viewport={{ margin: "-60% 0px -40% 0px" }}
                                 onViewportEnter={() => setActiveStep(3)}
                             >
                                 <h4 className={`font-Inter font-semibold text-[32px] transition-colors duration-300 ${activeStep === 3 ? "text-white" : "text-[#92B5D7]"}`}>
