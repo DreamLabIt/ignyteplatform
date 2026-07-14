@@ -15,14 +15,12 @@ interface AuditBadge {
 
 interface ScheduleAuditProps {
     title?: string;
-    title1?: string;
     description?: string;
     buttonText?: string;
 }
 
 export default function ScheduleAudit({
     title = "Schedule Your Audit Today",
-    title1 = "",
     description = "Conducting manual IT asset collection and network discovery is time-consuming and costly. And even when an organization achieves compliance, these processes are difficult to maintain and scale to other frameworks.",
     buttonText = "Schedule a Call"
 }: ScheduleAuditProps): React.ReactElement {
@@ -58,15 +56,11 @@ export default function ScheduleAudit({
             <div className="mx-auto flex flex-col lg:flex-row lg:items-center justify-start gap-10 lg:gap-71">
 
                 <div className="flex flex-col w-full max-w-3xl ">
-                    <h2 className="font-Inter font-semibold text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-8.5">
+                    <h2 className="font-Inter font-semibold max-w-140 text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-8.5">
                         {title}
                     </h2>
 
-                    {title1 ? <h2 className="font-Inter font-semibold text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-8.75">
-                        {title1}
-                    </h2> : ""}
-
-                    <p className="font-Inter font-medium text-[16px] md:text-[20px] leading-[125%] text-[#ECEBEC]/90 mb-8.5">
+                    <p className="font-Inter font-medium text-[16px] md:text-[20px] leading-[125%] text-[#ECEBEC] mb-8.5">
                         {description}
                     </p>
 
