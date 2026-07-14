@@ -63,14 +63,13 @@ export default function ComplianceInsights() {
                                 />
                             </div>
 
-
                             <div className="flex flex-col  justify-between sm:min-h-50 md:min-h-20 xl:min-h-8.25 py-1 w-full">
                                 <div className="relative">
                                     <span className="inline-block bg-[#333132] text-[#ECEBEC] font-Inter font-normal text-[14px] px-4.5 py-1.25 rounded-[25px] mb-6.25">
                                         {item.badgeText}
                                     </span>
 
-                                    <h3 className="absolute top-14 font-Inter font-semibold text-[18px] xl:text-[25px] leading-[125%] tracking-[0.7%] text-[#1E374F] mb-2 pr-2">
+                                    <h3 className="absolute top-14 font-Inter font-semibold text-[15px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[25px] leading-[125%] tracking-[0.7%] text-[#1E374F] mb-2 pr-2">
                                         {item.title}
                                     </h3>
                                 </div>
@@ -78,7 +77,7 @@ export default function ComplianceInsights() {
                                 <div className="pt-22 md:pt-35">
                                     <Link
                                         href={item.linkHref}
-                                        className="inline-block font-Inter font-bold text-[20px] text-[#4F91CE] hover:text-[#3577b5] transition-colors border-b-2 border-[#4F91CE] hover:border-[#4B90CD]"
+                                        className="inline-block font-Inter font-bold text-=[14px] lg:text-[20px] text-[#4F91CE] hover:text-[#3577b5] transition-colors border-b-2 border-[#4F91CE] hover:border-[#4B90CD]"
                                     >
                                         {item.linkText}
                                     </Link>
