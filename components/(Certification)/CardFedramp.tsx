@@ -36,26 +36,26 @@ export default function CardSection({
     cards
 }: CardSectionProps): React.ReactElement {
     return (
-        <section className="w-full py-8 px-6 ">
+        <section className="w-full py-8 px-6">
             <div className="max-w-[1620px] mx-auto">
 
                 <div className="w-full max-w-196">
                     <h2 className="font-Inter font-semibold text-[28px] sm:text-[36px] md:text-[40px] leading-[105%] text-[#1E374F] mb-8">
                         {title}
                     </h2>
-                    <p className="font-Inter font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-[120%] text-[#1E374F]/80">
+                    <p className="font-Inter font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-[120%] text-[#1E374F]">
                         {subtitle}
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-7.5">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
                     {cards.map((card) => (
                         <div
                             key={card.id}
-                            className={`flex flex-col justify-between p-6.75 rounded-[25px] w-full lg:max-w-128.75 min-h-97.5 transition-all duration-300 hover:shadow-sm ${card.cardBgColor}`}
+                            className={`flex flex-col justify-between p-6.5 rounded-[25px] w-full lg:max-w-128.75 min-h-97.5 transition-all duration-300 hover:shadow-sm ${card.cardBgColor}`}
                         >
                             <div>
-                                <div className={`w-21.5 h-14 rounded-[25px] flex items-center justify-center mb-24 `}>
+                                <div className={`w-21 h-14 rounded-[25px] flex items-center justify-center mb-25.5 pt-5 `}>
                                     <Image
                                         src={card.iconSrc}
                                         alt={card.iconAlt}
@@ -65,19 +65,21 @@ export default function CardSection({
                                     />
                                 </div>
 
-                                <h3 className="font-Inter font-semibold text-[22px] sm:text-[24px] leading-[130%] max-w-90 text-[#1E374F] mb-5.75">
+
+                                <h3 className="font-Inter font-semibold text-[20px] sm:text-[22px] lg:text-[24px] leading-[125%] max-w-90 text-[#1E374F] mb-6">
                                     {card.title}
                                 </h3>
 
-                                <p className="font-Inter font-normal text-[16px] sm:text-[18px] leading-[120%] text-[#1E374F] mb-9.25">
-                                    {card.description}
+                                <p className="font-Inter font-normal text-[18px] leading-[125%] tracking-[-0.6%] text-[#1E374F] w-full max-w-106.25">
+                                    {card.description || "Your description text here based on Figma specification."}
                                 </p>
+
                             </div>
 
                             <div>
                                 <Link
                                     href={card.linkHref}
-                                    className={`inline-flex items-center gap-4 font-Inter font-semibold text-[20px] group border-b pb-0.5  transition-all w-fit ${card.linkColor ? card.linkColor : "text-[#1E374F] border-[#1E374F] hover:border-[#1E374F]"
+                                    className={`inline-flex items-center gap-4 font-Inter font-semibold text-[20px] group border-b pb-0.5 pt-8  transition-all w-fit ${card.linkColor ? card.linkColor : "text-[#1E374F] border-[#1E374F] hover:border-[#1E374F]"
                                         }`}
                                 >
                                     {card.linkText}
