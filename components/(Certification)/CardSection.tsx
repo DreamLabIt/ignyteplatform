@@ -1,6 +1,6 @@
 "use client";
-import LockIcon from "../../assets/icons/lock.png";
-import ShieldIcon from "../../assets/icons/shield.png";
+import LockIcon from "../../assets/icons/lock.svg";
+import ShieldIcon from "../../assets/icons/shield.svg";
 // import PatientIcon from "../../assets/icons/patient.png";
 import SectionBg from "../../assets/background/anita-austvika.jpg";
 import FedrampCardSection, { GridCard } from "../(Certification)/CardFedramp";

@@ -15,7 +15,7 @@ export default function PrimaryButton({
 }: PrimaryButtonProps) {
     const content = (
         <>
-            <span className="font-Inter font-semibold text-[14px] lg:text-[18px] leading-[100%] tracking-[0%] text-white select-none whitespace-nowrap">
+            <span className="font-Inter font-semibold text-[14px] lg:text-[20px] leading-[100%] tracking-[0%] text-white select-none whitespace-nowrap">
                 {text}
             </span>
             <div className="w-8.5 h-8.5 shrink-0 rounded-full bg-white flex items-center justify-center transition-transform duration-200 group-hover:translate-x-0.5">
