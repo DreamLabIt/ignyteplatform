@@ -6,7 +6,7 @@ import ScheduleAudit from "@/components/(Common)/ScheduleAudit";
 
 export default function Certification() {
   return (
-    < section className="bg-[#F1F1F1]">
+    <section className="bg-[#F1F1F1]">
       <Hero />
       <CloudService />
       <CustomerStories />

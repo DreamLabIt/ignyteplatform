@@ -5,7 +5,7 @@ import Testimonials from "@/components/(Compliance)/Testimonials";
 
 export default function Compliance() {
   return (
-    <>
+    <section className="bg-[#F1F1F1]">
       <Hero />
       <Testimonials />
       <CmmcFeatures />
@@ -14,6 +14,6 @@ export default function Compliance() {
         description="The Ignyte team is ready to help you align with the best practices you need for your DoD contracts, and to set you up with a sustainable way to reach additional compliance milestones as needed."
         buttonText="Request a Consultation"
       />
-    </>
+    </section>
   );
 }
