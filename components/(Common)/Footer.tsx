@@ -64,7 +64,6 @@ export default function Footer() {
             title: "Solutions",
             links: [
                 { text: "DIB", href: "/defense-industrial-base-cybersecurity/" },
-                { text: "COMSEC", href: "https://www.ignyteplatform.com/comsec/" },
                 { text: "Healthcare", href: "/healthcare-cybersecurity/" },
             ]
         },
@@ -129,10 +128,10 @@ export default function Footer() {
     const rightMenu = [footerMenus[1], footerMenus[2], footerMenus[4]];
 
     return (
-        <footer className="w-full px-2 sm:px-4 lg:px-6 bg-[#333132] text-[#ECEBEC] font-sans pt-14 pb-10">
+        <footer className="w-full px-2 sm:px-4 lg:px-6 bg-[#333132] text-[#ECEBEC] font-sans pt-12 pb-10">
             <div className="max-w-[1620px] mx-auto px-2 xl:px-0 relative">
 
-                <div className="mb-12 xl:mb-12.5">
+                <div className="mb-10 xl:mb-12">
                     <Link href="/">
                         <Image
                             src={Logo}
@@ -142,18 +141,20 @@ export default function Footer() {
                     </Link>
                 </div>
 
-                <div className="hidden xl:flex xl:flex-row xl:justify-between gap-x-10 pb-15 border-b border-[#ECEBEC]/10">
+                <div className="hidden xl:flex xl:flex-row xl:justify-start gap-[81.5px] pb-12 border-b border-[#ECEBEC]">
                     {footerMenus.map((group) => (
-                        <div key={group.title} className="flex flex-col gap-8 min-w-0">
-                            <h3 className="text-[#ECEBEC59] font-semibold text-[24px] tracking-wide">
-                                {group.title}
-                            </h3>
-                            <ul className="flex flex-col gap-3.75 -mt-3.5">
+                        <div key={group.title} className="flex flex-col gap-20.5 min-w-64.75">
+                            <div className="flex justify-start">
+                                <h3 className="text-[#ECEBEC59] font-semibold text-[24px] tracking-wide max-w-64.75">
+                                    {group.title}
+                                </h3>
+                            </div>
+                            <ul className="flex flex-col gap-[13.5px] -mt-16">
                                 {group.links.map((link) => (
                                     <li key={link.text} className="w-full">
                                         <Link
                                             href={link.href}
-                                            className="text-[15px] text-[#ECEBEC] hover:text-[#F7941D] transition-colors block leading-snug whitespace-nowrap"
+                                            className="text-[18px] text-[#ECEBEC] hover:text-[#F7941D] transition-colors block leading-snug whitespace-nowrap"
                                         >
                                             {link.text}
                                         </Link>

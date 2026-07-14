@@ -54,7 +54,7 @@ export default function ScheduleAudit({
     ];
 
     return (
-        <section className="w-full mx-auto bg-[#1E374F] text-[#ECEBEC] font-Inter pt-25.5 pb-26 py-25 px-4 md:px-50">
+        <section className="w-full mx-auto bg-[#1E374F] text-[#ECEBEC] font-Inter pt-25.5 pb-25 py-25 px-4 md:px-50">
             <div className="mx-auto flex flex-col lg:flex-row lg:items-center justify-start gap-10 lg:gap-71">
 
                 <div className="flex flex-col w-full max-w-3xl ">
