@@ -54,7 +54,7 @@ const stories: StoryItem[] = [
 function StoryRow({ story }: { story: StoryItem }) {
     return (
         <div
-            className={`flex flex-col gap-10 md:gap-30 items-center ${story.isReversed ? "md:flex-row-reverse" : "md:flex-row"
+            className={`flex flex-col gap-10 md:gap-30 items-center ${story.isReversed ? "md:flex-row-reverse md:-gap-10 " : "md:flex-row"
                 }`}
         >
             <div className="relative w-full md:w-1/2 max-w-192.75 px-4 md:px-0">
@@ -69,16 +69,16 @@ function StoryRow({ story }: { story: StoryItem }) {
                 </div>
             </div>
 
-            <div className="w-full md:w-1/2 flex flex-col gap-6 sm:gap-7.75 px-2 md:px-0 max-w-182.75 ">
-                <p className="font-inter font-semibold text-lg sm:text-[22px] lg:text-[24px] leading-[125%] tracking-normal text-[#1E374F] pt-2">
+            <div className="w-full md:w-1/2 flex flex-col gap-6 sm:gap-7.75 px-2 md:px-0 max-w-182.75 pt-1">
+                <p className="font-inter font-semibold max-w-172.75 text-lg sm:text-[22px] lg:text-[24px] leading-[125%] tracking-[0%] text-[#1E374F] ">
                     {story.quote}
                 </p>
 
-                <div className="flex flex-col gap-1">
-                    <span className="font-inter font-bold text-[16px] sm:text-[18px] text-[#1E374F]">
+                <div className="flex flex-col gap-1.5">
+                    <span className="font-inter font-medium text-[14px] sm:text-[18px] text-[#1E374F]">
                         {story.author}
                     </span>
-                    <span className="font-inter text-[14px] text-[#5B6B7A]">
+                    <span className="font-inter font-medium text-[14px] md:text-[18px] text-[#1E374F80]">
                         {story.role}
                     </span>
                 </div>
