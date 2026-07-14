@@ -98,7 +98,7 @@ function StoryRow({ story }: { story: StoryItem }) {
 
 export default function CustomerStories(): React.ReactElement {
     return (
-        <section className="w-full pt-16 pb-34.5">
+        <section className="w-full pt-16 pb-35">
             <div className="mx-auto w-full max-w-[1620px]  flex flex-col gap-14 sm:gap-10">
                 <h2 className="font-inter font-semibold text-2xl sm:text-[28px] lg:text-[40px] text-[#1E374F] tracking-[-0.5%] leading-31.25">
                     The Nation&apos;s Federal Sector Loves Ignyte

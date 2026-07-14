@@ -1,6 +1,5 @@
 "use client";
 import LockIcon from "../../assets/icons/lock.svg";
-import ShieldIcon from "../../assets/icons/shield.svg";
 import Storage from "../../assets/icons/storage.svg";
 import Folder from "../../assets/icons/folder.svg";
 import SectionBg from "../../assets/background/anita-austvika.jpg";
@@ -47,12 +46,11 @@ export default function CardSection() {
   ];
 
   return (
-    <section
-      className="w-full pb-16.5"
+    <section className="w-full pb-16.5 -mt-1.25 pt-0.75"
       style={{
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.86)), url(${SectionBg.src})`,
+        backgroundImage: `linear-gradient(180deg, #F1F1F1 0%, rgba(241, 241, 241, 0.90) 29.88%), url(${SectionBg.src})`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "center top",
         backgroundRepeat: "no-repeat"
       }}
     >
@@ -60,9 +58,7 @@ export default function CardSection() {
         <h2 className="font-Inter font-semibold text-[28px] sm:text-[34px] md:text-[40px] leading-[125%] text-[#1E374F] text-center  max-w-222.5 mx-auto">
           Ignyte Supports The Compliance Journey From Start to Finish
         </h2>
-
         <FedrampCardSection title="" subtitle="" cards={CardsData} />
-
       </div>
     </section>
   );
