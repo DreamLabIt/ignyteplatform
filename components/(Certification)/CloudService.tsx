@@ -49,7 +49,7 @@ export default function CloudService() {
 
     return (
         <section
-            className="w-full pt-26  pb-74 px-6 relative flex flex-col justify-center items-center"
+            className="w-full pt-25  pb-72 px-6 relative flex flex-col justify-center items-center"
             style={{
                 backgroundImage: `linear-gradient(to bottom, rgba(20, 35, 55, 0.21), rgba(26, 43, 67, 0.21)), url(${SectionBg.src})`,
                 backgroundSize: "100% 100%",
@@ -59,17 +59,17 @@ export default function CloudService() {
         >
             <div className="max-w-[1620px] mx-auto w-full">
                 <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
-                    <div className="max-w-218.5">
-                        <h2 className="font-Inter font-semibold text-[32px] sm:text-[36px] md:text-[40px] leading-[125%] text-[#ECEBEC] mb-6 tracking-tight">
+                    <div className="">
+                        <h2 className="text-[28px] sm:text-[34px] md:text-[40px] font-semibold font-Inter text-[#ECEBEC] leading-[125%] tracking-[0%] w-full max-w-[890px] mb-8.5">
                             See How Ignyte Helps Cloud Service Providers Achieve ATO Rapidly and Efficiently
                         </h2>
-                        <p className="font-Inter font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-[140%] text-[#ECEBEC]/80 max-w-187.75">
+                        <p className="font-Inter font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-[120%] tracking-[-1.4%] text-[#ECEBEC]/80 max-w-187.75">
                             FedRAMP compliance requires buy-in across your engineering, cybersecurity, and go-to-market teams. Ignyte gives your company a turnkey partner and a platform to help you:
                         </p>
                     </div>
 
                     <div className="shrink-0">
-                        <PrimaryButton href="/get-started" text=" Get Started" />
+                        <PrimaryButton href="/get-started" text=" Get Started" minWidth="min-w-[185px]"/>
                     </div>
                 </div>
 
