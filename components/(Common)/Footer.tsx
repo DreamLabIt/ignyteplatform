@@ -211,10 +211,10 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="pt-13 grid grid-cols-1 xl:grid-cols-12 gap-10 items-start">
+                <div className="pt-13 grid grid-cols-1 xl:grid-cols-12 gap-10 items-start pb-8 lg:pb-0">
 
                     <div className="xl:col-span-6 flex flex-col gap-10 xl:max-w-131.25">
-                        <p className="text-[18px] w-full max-w-130 font-normal font-Inter text-[#ECEBEC] tracking-[-0.01em] leading-[115%]">
+                        <p className="text-[14px] lg:text-[18px] w-full max-w-130 font-normal font-Inter text-[#ECEBEC] tracking-[-0.01em] leading-[115%]">
                             Bridging cyber assurance gaps with a transformative integrated risk management engine.
                         </p>
 
@@ -238,7 +238,7 @@ export default function Footer() {
                     </div>
 
                     <div className="xl:col-span-6 xl:justify-self-end w-full max-w-149.75">
-                        <div className="grid grid-cols-3 sm:grid-cols-4 gap-x-4 sm:gap-x-18 gap-y-20 justify-items-start sm:justify-items-end">
+                        <div className="grid grid-cols-3 sm:grid-cols-4 gap-x-4 sm:gap-x-18 gap-y-18.5 justify-items-start sm:justify-items-end">
                             {badges.map((badge, idx) => {
                                 const badgeImage = (
                                     <Image
@@ -264,16 +264,22 @@ export default function Footer() {
 
                 </div>
 
-                <div className="flex flex-col lg:absolute lg:bottom-2 lg:left-1.5 gap-4 text-[14px] text-[#ECEBEC] mt-20">
-                    <p className="w-full leading-relaxed text-[18px]">
+                <div className="flex flex-col lg:absolute lg:-bottom-1 lg:-left-0.6 gap-4 text-[14px] text-[#ECEBEC] ">
+                    <p className="text-[14px] lg:text-[18px] font-normal font-Inter text-[#ECEBEC] leading-[125%] tracking-normal w-full max-w-154.25">
                         Ignyte © {new Date().getFullYear()} All rights reserved. Ignyte Assurance Platform
                     </p>
-                    <div className="flex flex-row justify-between sm:justify-start sm:gap-6 w-full text-[18px]">
-                        <Link href="/privacy-policy" className="hover:text-[#F7941D] border-b">
+                    <div className="flex flex-row justify-between sm:justify-start sm:gap-11.75 w-full text-[18px] mt-4">
+                        <Link
+                            href="/privacy-policy"
+                            className="text-[14px] lg:text-[18px] font-normal font-Inter text-[#ECEBEC] hover:text-[#F7941D] underline decoration-solid underline-offset-auto leading-[125%] transition-colors whitespace-nowrap"
+                        >
                             Privacy Policy
                         </Link>
-                        <Link href="/terms-of-service" className="hover:text-[#F7941D] border-b">
-                            Terms of Service
+                        <Link
+                            href="/terms-of-service"
+                            className="text-[14px] lg:text-[18px] font-normal font-Inter text-[#ECEBEC] hover:text-[#F7941D] underline decoration-solid underline-offset-auto leading-[125%] transition-colors whitespace-nowrap"
+                        >
+                            Terms of Serviceform
                         </Link>
                     </div>
                 </div>
