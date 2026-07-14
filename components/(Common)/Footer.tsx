@@ -165,7 +165,7 @@ export default function Footer() {
                     ))}
                 </div>
 
-                <div className="grid grid-cols-2 xl:hidden gap-x-10 gap-y-14 pb-15 border-b border-[#ECEBEC]/10">
+                <div className="grid grid-cols-2 xl:hidden gap-x-10 gap-y-14 pb-15 border-b border-[#ECEBEC]">
                     <div className="flex flex-col gap-14">
                         {leftMenu.map((group) => (
                             <div key={group.title} className="flex flex-col gap-5 w-full min-w-0">
@@ -211,14 +211,14 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="pt-14 grid grid-cols-1 xl:grid-cols-12 gap-10 items-start">
+                <div className="pt-13 grid grid-cols-1 xl:grid-cols-12 gap-10 items-start">
 
                     <div className="xl:col-span-6 flex flex-col gap-10 xl:max-w-131.25">
-                        <p className="text-[15px] leading-[150%] text-[#ECEBEC]/80">
+                        <p className="text-[18px] w-full max-w-130 font-normal font-Inter text-[#ECEBEC] tracking-[-0.01em] leading-[115%]">
                             Bridging cyber assurance gaps with a transformative integrated risk management engine.
                         </p>
 
-                        <div className="flex flex-wrap gap-8">
+                        <div className="flex flex-wrap gap-8.75 pt-2">
                             {socialIcons.map((icon) => (
                                 <Link
                                     key={icon.alt}
