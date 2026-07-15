@@ -48,7 +48,7 @@ const testimonialsData: TestimonialItem[] = [
 export default function Testimonials() {
     return (
         <section
-            className="w-full min-h-222.25 py-20 lg:py-25 flex items-center select-none overflow-hidden"
+            className="w-full min-h-222.25 py-20 lg:py-25 flex items-center select-none overflow-hidden px-5"
             style={{
                 backgroundImage: `url(${TestimonialBg.src})`,
                 backgroundSize: "cover",
@@ -66,7 +66,7 @@ export default function Testimonials() {
                     {testimonialsData.map((item, index) => (
                         <div
                             key={index}
-                            className="w-full max-w-96.25 h-132.5 rounded-[20px] p-6.25 flex flex-col justify-between relative shadow-sm overflow-hidden"
+                            className="w-full max-w-96.25 rounded-[20px] p-6.25 flex flex-col justify-between relative shadow-sm overflow-hidden"
                             style={{
                                 background: "linear-gradient(24.15deg, rgba(146, 181, 215, 0) 5.42%, rgba(146, 181, 215, 0.7) 92.97%), linear-gradient(0deg, #F1F1F1, #F1F1F1)"
                             }}
