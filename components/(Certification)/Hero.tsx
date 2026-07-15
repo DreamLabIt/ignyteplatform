@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import PrimaryButton from "../(Common)/PrimaryButton";
-import HeroBg from "../../assets/background/navbar-bg.png";
+import HeroBg from "../../assets/background/fedrampherobg.png";
 import DashboardMockup from "../../assets/fontend/risk-dashboard.png";
 import RightGraphic from "../../assets/fontend/Illustration.png";
 
@@ -10,7 +10,7 @@ export default function Hero() {
         <section
             className="w-full min-h-screen pt-36 sm:pt-62.5 pb-25 px-6 relative overflow-hidden"
             style={{
-                backgroundImage: `linear-gradient(180deg, rgba(241, 241, 241, 0.21) 51.58%, #F1F1F1 100%), url(${HeroBg.src})`,
+                backgroundImage: `url(${HeroBg.src})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center top",
                 backgroundRepeat: "no-repeat",

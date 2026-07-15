@@ -54,7 +54,7 @@ export default function CardSection() {
         backgroundRepeat: "no-repeat"
       }}
     >
-      <div className="max-w-[1920px] mx-auto px-6 pt-19.5 relative">
+      <div className="max-w-[1920px] mx-auto px-5 pt-19.5 relative">
         <h2 className="font-Inter font-semibold text-[28px] sm:text-[34px] md:text-[40px] leading-[125%] text-[#1E374F] text-center  max-w-222.5 mx-auto">
           Ignyte Supports The Compliance Journey From Start to Finish
         </h2>

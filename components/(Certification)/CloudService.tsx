@@ -51,7 +51,7 @@ export default function CloudService() {
         <section
             className="w-full pt-25  pb-74 px-6 relative flex flex-col justify-center items-center"
             style={{
-                backgroundImage: `linear-gradient(0deg, rgba(24, 45, 67, 0.1) 62.68%, #182D43 100%), url(${SectionBg.src})`,
+                backgroundImage: `url(${SectionBg.src})`,
                 backgroundSize: "100% 100%",
                 backgroundPosition: "bottom",
                 backgroundRepeat: "no-repeat",

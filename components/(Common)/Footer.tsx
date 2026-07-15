@@ -15,7 +15,7 @@ import Badge2 from "../../assets/badges/organaization.png";
 import Badge3 from "../../assets/badges/cyber.png";
 import Badge4 from "../../assets/badges/ios.png";
 import Badge5 from "../../assets/badges/iosaccredited.png";
-import Badge6 from "../../assets/badges/FedRampBadge.png";
+import Badge6 from "../../assets/badges/fedrampbadg.png";
 import Badge7 from "../../assets/badges/gdpr.png";
 import Badge8 from "../../assets/badges/hipaa.png";
 import Badge9 from "../../assets/badges/sdvosb.png";
@@ -141,7 +141,7 @@ export default function Footer() {
                     </Link>
                 </div>
 
-                <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 xl:flex xl:flex-row xl:justify-start xl:gap-[81.5px] pb-12 border-b border-[#FFFFFF59] w-full overflow-hidden">
+                <div className="hidden lg:grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 xl:flex xl:flex-row xl:justify-start xl:gap-[81.5px] pb-12 border-b border-[#FFFFFF59] w-full overflow-hidden">
                     {footerMenus.map((group) => (
                         <div key={group.title} className="flex flex-col gap-5 w-full xl:min-w-50 lg:max-w-65">
                             <div className="flex justify-start">
@@ -166,7 +166,7 @@ export default function Footer() {
                     ))}
                 </div>
 
-                <div className="grid grid-cols-2 xl:hidden gap-x-10 gap-y-14 pb-15 border-b border-[#ECEBEC]">
+                <div className="grid grid-cols-2 md:hidden gap-x-10 gap-y-14 pb-15 border-b border-[#ECEBEC]">
                     <div className="flex flex-col gap-14">
                         {leftMenu.map((group) => (
                             <div key={group.title} className="flex flex-col gap-5 w-full min-w-0">
@@ -239,19 +239,20 @@ export default function Footer() {
                     </div>
 
                     <div className="xl:col-span-6 xl:justify-self-end w-full max-w-149.75">
-                        <div className="grid grid-cols-3 sm:grid-cols-4 gap-x-4 sm:gap-x-18 gap-y-18.5 justify-items-start sm:justify-items-end">
+                        <div className="grid grid-cols-3 sm:grid-cols-4 gap-x-4 sm:gap-x-13.75 lg:gap-x-18.75 gap-y-8.75 lg:gap-y-17.25 justify-items-start ">
                             {badges.map((badge, idx) => {
                                 const badgeImage = (
                                     <Image
                                         src={badge.src}
                                         alt={badge.alt}
-                                        className="w-full h-full object-contain transition-all"
+                                        width={93}
+                                        height={128}
                                     />
                                 );
                                 return (
-                                    <div key={idx} className="w-20 h-20 sm:w-23.25 sm:h-23.25 flex items-center justify-center">
+                                    <div key={idx} className="w-full h-full flex items-center justify-center">
                                         {badge.href ? (
-                                            <Link href={badge.href} target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center">
+                                            <Link href={badge.href} target="_blank" rel="noopener noreferrer" className="block">
                                                 {badgeImage}
                                             </Link>
                                         ) : (
@@ -265,7 +266,7 @@ export default function Footer() {
 
                 </div>
 
-                <div className="flex flex-col lg:absolute lg:-bottom-1 lg:-left-0.6 gap-4 text-[14px] text-[#ECEBEC] ">
+                <div className="flex flex-col lg:absolute lg:bottom-5 lg:-left-0.6 gap-4 text-[14px] text-[#ECEBEC] ">
                     <p className="text-[14px] lg:text-[18px] font-normal font-Inter text-[#ECEBEC] leading-[125%] tracking-normal w-full max-w-154.25">
                         Ignyte © {new Date().getFullYear()} All rights reserved. Ignyte Assurance Platform
                     </p>

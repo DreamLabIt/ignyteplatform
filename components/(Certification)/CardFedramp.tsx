@@ -36,7 +36,7 @@ export default function CardSection({
     cards
 }: CardSectionProps): React.ReactElement {
     return (
-        <section className="w-full py-8 px-6">
+        <section className="w-full py-8 px-1">
             <div className="max-w-[1620px] mx-auto">
 
                 <div className="w-full max-w-196">

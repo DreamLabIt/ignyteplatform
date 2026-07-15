@@ -9,7 +9,7 @@ import AuditPrepareImg from "../../assets/fontend/audit-prepare-girl.png";
 
 export default function CmmcFeatures() {
     return (
-        <section className="w-full pt-20 pb-10 md:py-25 select-none">
+        <section className="w-full pt-20 pb-10 md:py-25 select-none px-5">
             <div className="max-w-[1620px] mx-auto px-6 sm:px-12 lg:px-1 flex flex-col gap-9">
 
                 <div className="w-full lg:h-157.5 rounded-[30px] overflow-hidden relative flex flex-col lg:flex-row items-stretch justify-between p-0 bg-[#E0F2FE]"
