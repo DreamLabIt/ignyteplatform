@@ -1,3 +1,4 @@
+
 import Image, { StaticImageData } from "next/image";
 import PrimaryButton from "./PrimaryButton";
 import FedRampBadge from "../../assets/badges/FedRampBadgee.png";
@@ -52,52 +53,56 @@ export default function ScheduleAudit({
     ];
 
     return (
-        <section className="w-full mx-auto bg-[#1E374F] text-[#ECEBEC] font-Inter pt-25.5 pb-25 py-25 px-4 md:px-50">
-            <div className="mx-auto flex flex-col lg:flex-row lg:items-center justify-start gap-10 lg:gap-71">
+        <section className=" mx-auto w-full  bg-[#1E374F] text-[#ECEBEC] font-Inter pt-25.5 pb-25 py-25">
+            <div className="max-w-[1620px] mx-auto w-full px-12">
 
-                <div className="flex flex-col w-full max-w-3xl ">
-                    <h2 className="font-Inter font-semibold max-w-140 text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-8.5">
-                        {title}
-                    </h2>
+                <div className="flex flex-col lg:flex-row lg:items-center justify-start gap-[20%]">
 
-                    <p className="font-Inter font-medium text-[16px] md:text-[20px] leading-[125%] text-[#ECEBEC] mb-8.5">
-                        {description}
-                    </p>
+                    <div className="flex flex-col ">
+                        <h2 className="font-Inter font-semibold text-[24px] md:text-[40px] leading-[125%] tracking-normal text-[#ECEBEC] mb-8.5">
+                            {title}
+                        </h2>
 
-                    <div className="hidden lg:block  ">
-                        <PrimaryButton href="/schedule-call" text={buttonText} minWidth="min-w-[226px]" />
-                    </div>
-                </div>
+                        <p className="font-Inter font-medium text-[16px] md:text-[20px] leading-[125%] text-[#ECEBEC] mb-8.5 max-w-187.75">
+                            {description}
+                        </p>
 
-                <div className="flex flex-wrap items-center justify-start gap-6 sm:gap-8 lg:gap-13 w-full lg:w-auto">
-                    {badges.map((badge, index) => (
-                        <div key={index} className="flex items-center justify-center shrink-0">
-                            {/* Desktop Image */}
-                            <Image
-                                src={badge.src}
-                                alt={badge.alt}
-                                width={badge.desktopWidth}
-                                height={badge.desktopHeight}
-                                className="object-contain hidden grayscale md:block"
-                                priority
-                            />
-                            {/* Mobile Image */}
-                            <Image
-                                src={badge.src}
-                                alt={badge.alt}
-                                width={badge.mobileWidth}
-                                height={badge.mobileHeight}
-                                className="object-contain grayscale block md:hidden"
-                                priority
-                            />
+                        <div className="hidden lg:block  ">
+                            <PrimaryButton href="/schedule-call" text={buttonText} minWidth="min-w-[226px]" />
                         </div>
-                    ))}
-                </div>
+                    </div>
 
-                <div className="block lg:hidden mt-2">
-                    <PrimaryButton href="/schedule-call" text={buttonText} />
-                </div>
+                    <div className="flex items-center justify-center md:justify-start gap-6 sm:gap-8 lg:gap-[12%] w-full max-w-104.25">
+                        {badges.map((badge, index) => (
+                            <div key={index} className="flex items-center justify-start shrink-0">
+                                {/* Desktop Image */}
+                                <Image
+                                    src={badge.src}
+                                    alt={badge.alt}
+                                    width={badge.desktopWidth}
+                                    height={badge.desktopHeight}
+                                    className="object-contain hidden grayscale md:block"
+                                    priority
+                                />
+                                {/* Mobile Image */}
+                                <Image
+                                    src={badge.src}
+                                    alt={badge.alt}
+                                    width={badge.mobileWidth}
+                                    height={badge.mobileHeight}
+                                    className="object-contain grayscale block md:hidden"
+                                    priority
+                                />
+                            </div>
+                        ))}
+                    </div>
 
+
+                    <div className="flex justify-center lg:hidden mt-2">
+                        <PrimaryButton href="/schedule-call" text={buttonText} />
+                    </div>
+
+                </div>
             </div>
         </section>
     );
