@@ -27,14 +27,14 @@ export default function MainHero() {
             <div
                 className="w-full overflow-hidden flex items-center px-6 lg:px-12 pt-24 lg:pt-34 pb-20"
                 style={{
-                    backgroundImage: `linear-gradient(180deg, rgba(241, 241, 241, 0.48) 51.58%, #F1F1F1 100%), url(${HeroBgImg.src})`,
+                    backgroundImage: `linear-gradient(180deg, rgba(241, 241, 241, 0.28) 51.58%, #F1F1F1 90%), url(${HeroBgImg.src})`,
                     backgroundSize: "cover",
                 }}
             >
 
                 <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-[1620px] mx-auto gap-0">
 
-                    <div className="flex flex-col items-start justify-center gap-0.5 pt-10 lg:pt-28 flex-1 ">
+                    <div className="flex flex-col items-start justify-center gap-0.5 pt-10 lg:pt-28 flex-1 z-20">
 
                         {/* Top badges */}
                         <div className="flex items-center gap-2.5 pb-2">
