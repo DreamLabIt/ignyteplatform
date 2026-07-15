@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import BgGradientImg from "../../assets/background/anita-austvika.jpg";
+import BgGradientImg from "../../assets/background/grcfeaturesbg.png";
 import ComplianceTeamImg from "../../assets/fontend/compliance-team.png";
 import RiskDashboardImg from "../../assets/fontend/risk-dashboard.png";
 import RevenueChartImg from "../../assets/fontend/revenue-chart.png";
@@ -19,7 +19,7 @@ export default function GrcFeatures() {
     return (
         <section className="relative w-full overflow-hidden -mt-px pt-14 lg:pt-42 px-6 lg:px-12.5 xl:px-6 pb-18"
             style={{
-                backgroundImage: `linear-gradient(0deg, rgba(241, 241, 241, 0.39) 70.82%, #F1F1F1 99.35%), url(${BgGradientImg.src})`,
+                backgroundImage: `url(${BgGradientImg.src})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat"

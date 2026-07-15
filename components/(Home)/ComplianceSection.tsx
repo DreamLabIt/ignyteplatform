@@ -2,7 +2,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import GradientBgImg from "../../assets/background/sunset-gradient.png";
+import GradientBgImg from "../../assets/background/compliancesectionbg.png";
 import ConsultImg from "../../assets/fontend/consultImg.png";
 import AutomateImg from "../../assets/fontend/automateImg.png";
 import AuditImg from "../../assets/fontend/auditImg.png";
@@ -21,7 +21,7 @@ export default function ComplianceSection() {
         <section
             className="relative w-full overflow-x-hidden text-white  px-6"
             style={{
-                backgroundImage: `linear-gradient(0deg, transparent 10px, rgba(24, 45, 67, 0.60) 300px, #182D49 30%), url(${GradientBgImg.src})`,
+                backgroundImage: `url(${GradientBgImg.src})`,
                 backgroundSize: "100% 100%",
                 backgroundPosition: "center top",
                 backgroundRepeat: "no-repeat"
@@ -134,7 +134,7 @@ export default function ComplianceSection() {
                                 viewport={{ margin: "-50% 0px -50% 0px" }}
                                 onViewportEnter={() => setActiveStep(2)}
                             >
-                                <h4 className={`font-Inter font-semibold text-[32px] transition-colors duration-300 ${activeStep === 2 ? "text-white" : "text-[#92B5D7]"}`}>
+                                <h4 className={`font-Inter font-semibold text-[32px] transition-colors duration-300 ${activeStep === 2 ? "text-[#92B5D7]" : "text-[#92B5D759]"}`}>
                                     Automate
                                 </h4>
                                 <div className={`text-[18px] font-normal max-w-190  mt-7  leading-[125%] -mb-14 transition-colors duration-300 ${activeStep === 2 ? "text-[#ECEBEC]" : "text-[#ECEBEC59]"}`}>
@@ -155,7 +155,7 @@ export default function ComplianceSection() {
                                 viewport={{ margin: "-60% 0px -40% 0px" }}
                                 onViewportEnter={() => setActiveStep(3)}
                             >
-                                <h4 className={`font-Inter font-semibold text-[32px] transition-colors duration-300 ${activeStep === 3 ? "text-white" : "text-[#92B5D7]"}`}>
+                                <h4 className={`font-Inter font-semibold text-[32px] transition-colors duration-300 ${activeStep === 3 ? "text-[#92B5D7]" : "text-[#92B5D759]"}`}>
                                     Audit
                                 </h4>
                                 <p className={`text-[19px] font-normal  tracking-[-1.29px] mt-6  leading-[125%] mb-4.5 transition-colors duration-300 ${activeStep === 3 ? "text-[#ECEBEC]" : "text-[#ECEBEC59]"}`}>
