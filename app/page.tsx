@@ -8,7 +8,7 @@ import TrustedTeams from "@/components/(Home)/TrustedTeams";
 export default function Home() {
   console.log("Home: rendering",);
   return (
-    <section className="bg-[#F1F1F1]">
+    <section className="bg-[#F1F1F1] ">
       <Hero />
       <TrustedTeams />
       <GrcFeatures />
