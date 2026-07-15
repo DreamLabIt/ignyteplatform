@@ -76,7 +76,7 @@ export default function HomeCardSection({
                             <div className="pt-11">
                                 <Link
                                     href={card.linkHref}
-                                    className={`inline-flex items-center gap-5 font-Inter font-semibold text-[20px] group border-b-3 pb-0.5 transition-all w-fit ${card.linkColor ? card.linkColor : "text-[#1E374F] border-[#1E374F] hover:border-[#1E374F]"
+                                    className={`inline-flex items-center gap-5 font-Inter font-semibold text-[20px] group border-b pb-0.5 transition-all w-fit ${card.linkColor ? card.linkColor : "text-[#1E374F] border-[#1E374F] hover:border-[#1E374F]"
                                         }`}
                                 >
                                     {card.linkText}

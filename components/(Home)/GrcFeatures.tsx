@@ -19,7 +19,7 @@ export default function GrcFeatures() {
     return (
         <section className="relative w-full overflow-hidden -mt-px pt-14 lg:pt-42 px-6 lg:px-12.5 xl:px-6 pb-18"
             style={{
-                backgroundImage: `linear-gradient(180deg, rgba(241, 241, 241, 0.56) 51.58%, #F8F9FA 87.61%), url(${BgGradientImg.src})`,
+                backgroundImage: `linear-gradient(0deg, rgba(241, 241, 241, 0.78) 70.82%, #F1F1F1 99.45%), url(${BgGradientImg.src})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat"

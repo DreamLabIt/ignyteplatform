@@ -81,10 +81,10 @@ export default function TrustedTeams() {
                     </div>
                 </div>
 
-                <div className="w-full flex justify-center w-[253px]">
+                <div className="flex justify-center w-63.25">
                     <Link
                         href="/customers"
-                        className="group flex items-center gap-[21.81] font-Inter font-semibold text-[20px] text-[#1E374F] transition-all border-b-2 border-[#1E374F] hover:border-[#1E374F]/80"
+                        className="group flex items-center gap-[21.81] font-Inter font-semibold text-[20px] text-[#1E374F] transition-all border-b border-[#1E374F] hover:border-[#1E374F]/80"
                     >
                         Hear From Our Customers
                         <span className="transition-transform group-hover:translate-x-1 duration-200 text-[20px]">

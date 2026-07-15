@@ -141,7 +141,7 @@ export default function Footer() {
                     </Link>
                 </div>
 
-                <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 xl:flex xl:flex-row xl:justify-start xl:gap-[81.5px] pb-12 border-b border-[#ECEBEC] w-full overflow-hidden">
+                <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 xl:flex xl:flex-row xl:justify-start xl:gap-[81.5px] pb-12 border-b border-[#FFFFFF59] w-full overflow-hidden">
                     {footerMenus.map((group) => (
                         <div key={group.title} className="flex flex-col gap-5 w-full xl:min-w-50 lg:max-w-65">
                             <div className="flex justify-start">

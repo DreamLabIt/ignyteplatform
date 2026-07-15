@@ -113,7 +113,7 @@ export default function ComplianceSection() {
                                 viewport={{ margin: "-50% 0px -50% 0px" }}
                                 onViewportEnter={() => setActiveStep(1)}
                             >
-                                <h4 className={`font-Inter font-semibold text-[32px] transition-colors duration-300 ${activeStep === 1 ? "text-white" : "text-[#92B5D7]"}`}>
+                                <h4 className={`font-Inter font-semibold text-[32px] transition-colors duration-300 ${activeStep === 1 ? "text-[#92B5D7]" : "text-[#92B5D759]"}`}>
                                     Consult
                                 </h4>
                                 <p className={`text-[18px] font-normal max-w-190 tracking-[-0.1px] mt-7  leading-[125%] -mb-6 transition-colors duration-300 ${activeStep === 1 ? "text-[#ECEBEC]" : "text-[#ECEBEC59]"}`}>

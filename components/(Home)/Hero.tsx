@@ -27,10 +27,8 @@ export default function MainHero() {
             <div
                 className="w-full overflow-hidden flex items-center px-6 lg:px-12 pt-24 lg:pt-34 pb-20"
                 style={{
-                    backgroundImage: `linear-gradient(180deg, rgba(241, 241, 241, 0.66) 51.58%, #F1F1F1 100%), url(${HeroBgImg.src})`,
+                    backgroundImage: `linear-gradient(180deg, rgba(241, 241, 241, 0.48) 51.58%, #F1F1F1 100%), url(${HeroBgImg.src})`,
                     backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat"
                 }}
             >
 
@@ -112,9 +110,9 @@ export default function MainHero() {
                 </div>
             </div>
             <div
-                className="absolute bottom-[0%] left-0 right-0 h-[60%] pointer-events-none z-10"
+                className="absolute bottom-[2%] left-0 right-0 h-[60%] pointer-events-none z-10"
                 style={{
-                    background: "linear-gradient(180deg, rgba(241, 240, 239, 0) 36.29%, #F2F1EF 97.97%)"
+                    background: "linear-gradient(180deg, rgba(241, 240, 239, 0) 16.29%, #F2F1EF 98.97%)"
 
                 }}
             />
