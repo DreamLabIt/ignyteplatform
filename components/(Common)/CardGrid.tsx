@@ -42,7 +42,7 @@ export default function HomeCardSection({
                     <h2 className="font-Inter font-semibold text-[28px] sm:text-[36px] md:text-[40px] leading-[105%] text-[#1E374F] mb-9">
                         {title}
                     </h2>
-                    <p className="font-Inter font-medium text-[14px] sm:text-[18px] md:text-[20px] leading-[114.99999999999999%] text-[#1E374F] tracking-[0.3%] max-w-197.5">
+                    <p className="font-Inter font-medium text-[14px] sm:text-[18px] md:text-[20px] leading-[115%] text-[#1E374F] tracking-[-0.01em] w-full max-w-190">
                         {subtitle}
                     </p>
                 </div>

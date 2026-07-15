@@ -58,7 +58,7 @@ export default function ComplianceSection() {
                         <h3 className="font-Inter font-semibold text-[32px] leading-[125%] text-[#ECEBEC]">
                             End-to-End Compliance Support
                         </h3>
-                        <p className="font-Inter font-normal text-[15px] text-[#ECEBEC]">
+                        <p className="font-Inter font-normal text-[14px]  text-[#ECEBEC] ">
                             Ignyte’s platform and services will meet you where your compliance program is.
                         </p>
                     </div>
@@ -101,7 +101,7 @@ export default function ComplianceSection() {
                             <h3 className="font-Inter font-semibold lg:text-[40px] leading-[125%] text-[#ECEBEC] ">
                                 End-to-End Compliance Support
                             </h3>
-                            <p className="font-Inter font-Medium text-[20px] text-[#ECEBEC] tracking-[0.17px] pt-1">
+                            <p className="font-Inter font-Medium text-[20px] text-[#ECEBEC] tracking-[0.17px] pt-1 whitespace-nowrap">
                                 Ignyte’s platform and services will meet you where your compliance program is.
                             </p>
                         </div>
