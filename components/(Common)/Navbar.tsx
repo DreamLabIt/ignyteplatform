@@ -76,7 +76,7 @@ export default function Navbar(): React.ReactElement {
     return (
         <section className="relative w-full">
             <header className="absolute top-9.75 left-0 w-full px-4 sm:px-6 lg:px-7 z-40 bg-transparent">
-                <div className="max-w-[1620px] mx-auto h-20.5 bg-white rounded-[50px] shadow-[0px_10px_30px_0px_rgba(0,0,0,0.07)] flex items-center relative px-6 pl-3">
+                <div className="max-w-[1620px] mx-auto h-13.75 lg:h-20.5 bg-white rounded-[50px] shadow-[0px_10px_30px_0px_rgba(0,0,0,0.07)] flex items-center relative px-6 pl-3">
 
                     <div className="flex items-center shrink-0">
                         <Link href="/" className="block">
@@ -131,7 +131,7 @@ export default function Navbar(): React.ReactElement {
                             type="button"
                             aria-label="Open menu"
                         >
-                            <svg className="w-6.75 h-6.75" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg className="w-5.75 h-5.75" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
                         </button>
