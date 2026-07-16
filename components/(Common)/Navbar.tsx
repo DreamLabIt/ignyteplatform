@@ -77,6 +77,7 @@ export default function Navbar(): React.ReactElement {
         <section className="relative w-full">
             <header className="absolute top-9.75 left-0 w-full px-4 sm:px-6 lg:px-7 z-40 bg-transparent">
                 <div className="max-w-[1620px] mx-auto h-20.5 bg-white rounded-[50px] shadow-[0px_10px_30px_0px_rgba(0,0,0,0.07)] flex items-center relative px-6 pl-3">
+
                     <div className="flex items-center shrink-0">
                         <Link href="/" className="block">
                             <Image
@@ -84,12 +85,11 @@ export default function Navbar(): React.ReactElement {
                                 alt="Logo"
                                 width={160}
                                 height={50}
-                                className="w-42 h-12.5 object-contain"
+                                className="w-19 h-6 md:w-40 md:h-12.5 object-contain opacity-100 rotate-0"
                                 priority
                             />
                         </Link>
                     </div>
-
                     <nav className="hidden lg:flex items-center gap-[9.6%] ml-[5.1%] h-full">
                         {menuItems.map((item) => (
                             <div key={item.name} className="relative group flex items-center h-full">
