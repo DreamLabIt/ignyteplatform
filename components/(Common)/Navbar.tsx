@@ -154,12 +154,12 @@ export default function Navbar(): React.ReactElement {
                     }}
                 >
                     <div>
-                        <div className="flex items-center justify-between">
+                        <div className="flex items-center justify-between px-4">
                             <Link href="/" onClick={() => setIsMenuOpen(false)}>
-                                <Image src={Logo} alt="Logo" className="w-19 h-6" />
+                                <Image src={Logo} alt="Logo" className="w-[76px] h-[24px]" />
                             </Link>
                             <div className="flex items-center max-w-44.25 max-h-13 ">
-                                <PrimaryButton href="/get-started" text="Get Started" />
+                                <PrimaryButton href="/get-started" text="Get Started" minWidth = "min-w-36" />
                             </div>
                         </div>
 

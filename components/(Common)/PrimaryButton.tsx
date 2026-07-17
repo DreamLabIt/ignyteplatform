@@ -36,7 +36,7 @@ export default function PrimaryButton({
         </>
     );
 
-    const className = `group inline-flex items-center justify-between ${minWidth} w-auto h-13 bg-[#F7941D] hover:bg-[#e08316] rounded-[100px] py-3.75 pl-4 pr-2.25 transition-all duration-200 active:scale-[0.98]`;
+    const className = `group inline-flex items-center justify-between ${minWidth} w-auto h-11 md:h-13 bg-[#F7941D] hover:bg-[#e08316] rounded-[100px] py-1.75 md:py-3.75 pl-4 pr-2.25 transition-all duration-200 active:scale-[0.98]`;
 
     if (href) {
         return (
