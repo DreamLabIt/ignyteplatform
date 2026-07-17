@@ -145,9 +145,9 @@ export default function Navbar(): React.ReactElement {
             >
 
                 <div
-                    className="p-6 min-h-screen flex flex-col justify-between max-w-125 mx-auto md:max-w-full"
+                    className="py-6 px-2 min-h-screen flex flex-col justify-between max-w-125 mx-auto md:max-w-full"
                     style={{
-                        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${backgrounds.src})`,
+                        backgroundImage: `url(${backgrounds.src})`,
                         backgroundSize: "cover",
                         backgroundPosition: "center top",
                         backgroundRepeat: "no-repeat"
@@ -170,7 +170,7 @@ export default function Navbar(): React.ReactElement {
                                 type="button"
                                 aria-label="Close menu"
                             >
-                                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
                             </button>
